@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'MSReferenceSansSerif';
+    src: url('../ressources/fonts/ms-reference-sans-serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBold';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBoldItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBold';
+    src: url('../ressources/fonts/GOTHICB.TTF') format('truetype');
+    /* Spécifie le chemin du fichier et le format de la police */
+    /* Tu peux ajouter d'autres propriétés ici, comme font-weight, font-style, etc. */
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'GothicBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ajustement ici pour espacer les éléments sur toute la longueur */
+    height: 1.5vw;
+    background-color: #171717;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Utilise Flexbox pour le positionnement des éléments de la liste */
+    align-items: center;
+}
+
+header nav li {
+    padding-left: 9%;
+    margin-right: 8%;
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
+    color: inherit;
+    /* Hérite de la couleur du texte du header */
+    text-decoration: none;
+    /* Supprime le soulignement par défaut des liens */
+}
+
+header img {
+    max-height: 100%;
+    width: 3vw;
+    height: 3vw;
+    transition: transform 0.5s;
+    /* Ajoute une transition pour une animation plus fluide */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /* Pas de soulignement par défaut */
+}
+
+/* Styles lorsque la souris survole le lien */
+a:hover {
+    text-decoration: underline;
+    /* Soulignement au survol */
+}
+
+header a:hover {
+    color: #FFE100;
+    /* Changement de couleur au survol */
+}
+
+/* Main Content */
+
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #6F9CD6;
+    height: 287vw;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    height: 247vw;
+    top: 3.5vw;
+}
+
+main h2 {
+    width: 100%;
+    position: absolute;
+    font-size: 2.25vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main p {
+    color: #ffffff;
+    font-size: 0.9vw;
+    width: 100%;
+    font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
+}
+
+#header {
+    position: absolute;
+    top: 0vw;
+    width: 100%;
+}
+
+#cloudheader {
+    position: absolute;
+    top: 33vw;
+    width: 100%;
+}
+
+#h2-contexte {
+    top: 50vw;
+}
+
+#star {
+    position: absolute;
+    top: 61vw;
+    left: 19vw;
+    width: 11vw;
+}
+
+#contexte {
+    background-color: #5375A0;
+    position: absolute;
+    top: 60vw;
+    right: 18.5vw;
+    height: 16.5vw;
+    width: 44vw;
+    border: 0.5vw solid #374E6B;
+    border-radius: 0.25vw;
+}
+
+#contexte p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 94.5%;
+}
+
+#h2-etapes {
+    top: 81vw;
+}
+
+#rocket {
+    position: absolute;
+    top: 92vw;
+    right: 23vw;
+    width: 6vw;
+}
+
+#etapes {
+    background-color: #5375A0;
+    position: absolute;
+    top: 91vw;
+    left: 18.5vw;
+    height: 16vw;
+    width: 44vw;
+    border: 0.5vw solid #374E6B;
+    border-radius: 0.25vw;
+}
+
+#etapes ol {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 94.5%;
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+#etapes ol li {
+    position: relative;
+    color: #ffffff;
+    font-size: 0.9vw;
+    margin-bottom: 1vw;
+    counter-increment: my-counter;
+    font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
+}
+
+#etapes ol li::before {
+    content: counter(my-counter);
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    margin-right: 1vw;
+}
+
+#h2-principe {
+    top: 112.5vw;
+}
+
+#pictures {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 122.5vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-52.5%);
+    list-style: none;
+}
+
+#pictures li {
+    padding-right: 2.5%;
+}
+
+#pictures li h3 {
+    width: 20vw;
+    top: 21.5vw;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-size: 1.15vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifItalic', 'Arial', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#pictures img {
+    width: 20vw;
+    height: 20vw;
+    border: 0.5vw solid black;
+    /* Épaisseur et couleur de la bordure */
+    border-radius: 1vw;
+}
+
+#pictures #wof2 {
+    width: 25vw;
+    height: 20vw;
+    border: 0.5vw solid black;
+    /* Épaisseur et couleur de la bordure */
+    border-radius: 1vw;
+}
+
+#pictures #wof2-p {
+    width: 26vw;
+    top: 21.5vw;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-size: 1.15vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifItalic', 'Arial', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#principe {
+    background-color: #5375A0;
+    position: absolute;
+    top: 150vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 7vw;
+    width: 64.5vw;
+    border: 0.5vw solid #374E6B;
+    border-radius: 0.25vw;
+}
+
+#principe p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 94.5%;
+}
+
+#h2-conclusion {
+    top: 161.5vw;
+}
+
+#fin {
+    position: absolute;
+    top: 187vw;
+    left: 15vw;
+    width: 17vw;
+}
+
+#conclusion{
+    background-color: #5375A0;
+    position: absolute;
+    top: 174.5vw;
+    right: 18.5vw;
+    height: 30vw;
+    width: 44vw;
+    border: 0.5vw solid #374E6B;
+    border-radius: 0.25vw;
+}
+
+#conclusion p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 94.5%;
+}
+
+#h2-explore {
+    top: 210vw;
+}
+
+#explore {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 222.5vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-52.5%);
+    list-style: none;
+}
+
+#explore li {
+    padding-right: 2.5%;
+}
+
+#explore li p {
+    width: 10vw;
+    padding: 0;
+    margin: 0;
+    top:0.5vw;
+    font-size: 1vw;
+    font-family: 'MSReferenceSansSerifBoldItalic', 'Arial', sans-serif;
+    position: absolute;
+}
+
+#explore li #bagus p {
+    left: 1vw;
+}
+
+#explore li #saveGod p {
+    left: 23.5vw;
+}
+
+#explore li h4 {
+    width: 20vw;
+    top: 12.5vw;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    color:#303030;
+}
+
+#explore li #bagus h4 {
+    left: 2.75vw;
+}
+
+#explore li #saveGod h4 {
+    left: 25.25vw;
+}
+
+#explore img {
+    width: 20vw;
+    height: 20vw;
+    border: 0.5vw solid black;
+    /* Épaisseur et couleur de la bordure */
+    border-radius: 1vw;
+}
+
+#moreProjects {
+    width: 100%;
+    position: absolute;
+    top: 245.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+#moreProjects img {
+    position: relative;
+    left: 69.5vw;
+    width: 15vw;
+}
+
+#moreProjects p {
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    position: absolute;
+    width: 12vw;
+    top: 22.25%;
+    left: 71.35vw;
+    font-size: 1.1vw;
+    color: black; /* Soulignement au survol */
+}
+
+#moreProjects a:hover p {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+#footer-bg {
+    user-select: none;
+    position: absolute;
+    bottom: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: -1;
+}
+
+/* -------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    font-size: 1.25vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ajustement ici pour espacer les éléments sur toute la longueur */
+}
+
+footer nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Utilise Flexbox pour le positionnement des éléments de la liste */
+    align-items: center;
+}
+
+footer nav li {
+    margin-right: 24.5%;
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
+    color: inherit;
+    /* Hérite de la couleur du texte du header */
+    text-decoration: none;
+    /* Supprime le soulignement par défaut des liens */
+}
+
+footer img {
+    max-height: 100%;
+}
+
+#mailIcon {
+    width: 1.9vw;
+    margin-right: 5%;
+}
+
+#linkedinIcon {
+    width: 7.25vw;
+}
+
+#telIcon {
+    width: 1.5vw;
+    margin-right: 7%;
+}

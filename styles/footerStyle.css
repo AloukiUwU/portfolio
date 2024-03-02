@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'MSReferenceSansSerifBold';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
+}
+
+footer {
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    font-size: 1.25vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
+    align-items: center;
+}
+
+footer nav li {
+    margin-right: 24.5%;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    color: inherit; /* Hérite de la couleur du texte du header */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+footer img {
+    max-height: 100%;
+}
+
+#mailIcon {
+    width: 1.9vw;
+    margin-right: 5%;
+}
+
+#linkedinIcon {
+    width: 7.25vw;
+}
+
+#telIcon {
+    width: 1.5vw;
+    margin-right: 7%;
+}

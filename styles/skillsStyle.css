@@ -1,0 +1,720 @@
+@font-face {
+    font-family: 'MSReferenceSansSerif';
+    src: url('../ressources/fonts/ms-reference-sans-serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBold';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBoldItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBold';
+    src: url('../ressources/fonts/GOTHICB.TTF') format('truetype');
+    /* Spécifie le chemin du fichier et le format de la police */
+    /* Tu peux ajouter d'autres propriétés ici, comme font-weight, font-style, etc. */
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'GothicBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ajustement ici pour espacer les éléments sur toute la longueur */
+    height: 1.5vw;
+    background-color: #171717;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Utilise Flexbox pour le positionnement des éléments de la liste */
+    align-items: center;
+}
+
+header nav li {
+    padding-left: 9%;
+    margin-right: 8%;
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
+    color: inherit;
+    /* Hérite de la couleur du texte du header */
+    text-decoration: none;
+    /* Supprime le soulignement par défaut des liens */
+}
+
+header img {
+    max-height: 100%;
+    width: 3vw;
+    height: 3vw;
+    transition: transform 0.5s;
+    /* Ajoute une transition pour une animation plus fluide */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /* Pas de soulignement par défaut */
+}
+
+/* Styles lorsque la souris survole le lien */
+a:hover {
+    text-decoration: underline;
+    /* Soulignement au survol */
+}
+
+header a:hover {
+    color: #FFE100;
+    /* Changement de couleur au survol */
+}
+
+/* Main Content */
+
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background: url("../ressources/img/starry-bg.png");
+    background-size: 100% auto;
+    /* Couvre la largeur, se répète en hauteur */
+    background-repeat: repeat-y;
+    /* Se répète verticalement */
+    height: 600vw;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    height: 590vw;
+    top: 0;
+}
+
+#sun {
+    width: 100%;
+    user-select: none;
+    top: -2vw;
+    left: 0;
+    z-index: -1;
+}
+
+main h1 {
+    width: 100%;
+    position: absolute;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    top: 7vw;
+    color: black;
+}
+
+main h2 {
+    width: 100%;
+    position: absolute;
+    font-size: 2.25vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+main h3 {
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    color: #1B2735;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main h4 {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    color: #ffffff;
+    position: absolute;
+}
+
+main p {
+    color: #ffffff;
+    font-size: 0.9vw;
+    width: 100%;
+    font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
+}
+
+#langages {
+    top: 40vw;
+}
+
+#img {
+    position: absolute;
+}
+
+#planet {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#planet-line {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    user-select: none;
+}
+
+#bar {
+    position: absolute;
+    width: 60vw;
+    height: 3vw;
+    background-color: #1B2735;
+    border: 0.35vw solid #ffffff;
+    /* Épaisseur et couleur de la bordure */
+    border-radius: 0.25vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* C++ */
+
+#cplus {
+    position: absolute;
+    width: 100%;
+    top: 50vw;
+    height: 75vw;
+}
+
+#cplus #planet {
+    top: 5vw;
+    width: 50vw;
+}
+
+#cplus #planet-line {
+    top: 25vw;
+}
+
+#cplus h3 {
+    top: 24.5vw;
+}
+
+#cplus h4 {
+    left: 19.5%;
+    top: 54vw;
+}
+
+#cplus #bar {
+    top: 60vw;
+}
+
+#cplus #bar #fill {
+    height: 100%;
+    width: 47vw;
+}
+
+#cplus #bar #antifill {
+    position: absolute;
+    height: 100%;
+    /* width: 80%;
+    left:20%;
+    background-color: #1B2735; */
+    z-index: 2;
+}
+
+#cplus #bar #skillstar {
+    position: absolute;
+    left: 77.5%;
+    width: 3vw;
+    z-index: 3;
+}
+
+#cplus p {
+    position: absolute;
+    top: 65vw;
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* C# */
+
+#csharp {
+    position: absolute;
+    width: 100%;
+    top: 125vw;
+    height: 75vw;
+}
+
+#csharp #planet {
+    top: 5vw;
+    width: 50vw;
+}
+
+#csharp #planet-line {
+    top: 25vw;
+}
+
+#csharp h3 {
+    top: 24.5vw;
+}
+
+#csharp h4 {
+    left: 19.5%;
+    top: 54vw;
+}
+
+#csharp #bar {
+    top: 60vw;
+}
+
+#csharp #bar #fill {
+    height: 100%;
+    width: 47vw;
+}
+
+#csharp #bar #antifill {
+    position: absolute;
+    height: 100%;
+    /* width: 80%;
+    left:20%;
+    background-color: #1B2735; */
+    z-index: 2;
+}
+
+#csharp #bar #skillstar {
+    position: absolute;
+    left: 77.5%;
+    width: 3vw;
+    z-index: 3;
+}
+
+#csharp p {
+    position: absolute;
+    top: 65vw;
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* WEB */
+
+#web {
+    position: absolute;
+    width: 100%;
+    top: 200vw;
+    height: 100vw;
+}
+
+#web #planet {
+    top: 5vw;
+    width: 50vw;
+}
+
+#web #planet-line {
+    top: 19.5vw;
+}
+
+#web #H3-HTML {
+    color: black;
+    top: 11vw;
+    left: 35vw;
+}
+
+#web #H3-PHP {
+    color: black;
+    top: 7vw;
+    left: 65vw;
+}
+
+#web #H3-CSS {
+    color: black;
+    top: 31.5vw;
+    left: 42.5vw;
+}
+
+#web #H3-JS {
+    color: black;
+    top: 28.25vw;
+    left: 68vw;
+}
+
+#web h4 {
+    left: 19.5%;
+}
+
+#web #HTML h4 {
+    top: 44vw;
+}
+
+#web #CSS h4 {
+    top: 54vw;
+}
+
+#web #PHP h4 {
+    top: 64vw;
+}
+
+#web #JS h4 {
+    top: 74vw;
+}
+
+#web #HTML #bar {
+    top: 50vw;
+}
+
+#web #CSS #bar {
+    top: 60vw;
+}
+
+#web #PHP #bar {
+    top: 70vw;
+}
+
+#web #JS #bar {
+    top: 80vw;
+}
+
+#web #bar #fill {
+    height: 100%;
+    width: 47vw;
+}
+
+#web #bar #antifill {
+    position: absolute;
+    top:0vw;
+    height: 100%;
+    z-index: 2;
+}
+
+#web #HTML #bar #antifill {
+    width: 42%;
+    left:58%;
+    background-color: #1B2735;
+}
+
+#web #CSS #bar #antifill {
+    width: 48%;
+    left:52%;
+    background-color: #1B2735;
+}
+
+#web #PHP #bar #antifill {
+    width: 45%;
+    left:55%;
+    background-color: #1B2735;
+}
+
+#web #JS #bar #antifill {
+    width: 67%;
+    left:33%;
+    background-color: #1B2735;
+}
+
+#web #bar #skillstar {
+    position: absolute;
+    width: 3vw;
+    z-index: 3;
+}
+
+#web #HTML #bar #skillstar {
+    left: 56%;
+}
+
+#web #CSS #bar #skillstar {
+    left: 50%;
+}
+
+#web #PHP #bar #skillstar {
+    left: 53%;
+}
+
+#web #JS #bar #skillstar {
+    left: 31%;
+}
+
+#web p {
+    position: absolute;
+    top: 85vw;
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Autre compétences */
+
+#autres {
+    top: 305vw;
+}
+
+/* Comp1 */
+
+#comp1 {
+    position: absolute;
+    width: 100%;
+    top: 315vw;
+    height: 50vw;
+}
+
+#comp1 #planet {
+    top: 5vw;
+    width: 28vw;
+}
+
+#comp1 #planet-line {
+    top: 16vw;
+}
+
+#comp1 h4 {
+    width: 100%;
+    text-align: center;
+    top: 35vw;
+}
+
+#comp1 p {
+    position: absolute;
+    top: 41.5vw;
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Comp 2 */
+
+#comp2 {
+    position: absolute;
+    width: 100%;
+    top: 365vw;
+    height: 40vw;
+}
+
+#comp2 #planet {
+    top: 5vw;
+    width: 22vw;
+}
+
+#comp2 #planet-line {
+    top: 11vw;
+}
+
+#comp2 h4 {
+    width: 100%;
+    text-align: center;
+    top: 28vw;
+}
+
+#comp2 p {
+    position: absolute;
+    top: 34.5vw;
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Comp 3 */
+
+#comp3 {
+    position: absolute;
+    width: 100%;
+    top: 405vw;
+    height: 40vw;
+}
+
+#comp3 #planet {
+    top: 5vw;
+    width: 22vw;
+}
+
+#comp3 #planet-line {
+    top: 11vw;
+}
+
+#comp3 h4 {
+    width: 100%;
+    text-align: center;
+    top: 28vw;
+}
+
+#comp3 p {
+    position: absolute;
+    top: 34.5vw;
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Comp 4 */
+
+#comp4 {
+    position: absolute;
+    width: 100%;
+    top: 445vw;
+    height: 50vw;
+}
+
+#comp4 #planet {
+    top: 5vw;
+    width: 30vw;
+}
+
+#comp4 #planet-line {
+    top: 14vw;
+}
+
+#comp4 h4 {
+    width: 100%;
+    text-align: center;
+    top: 35vw;
+}
+
+#comp4 p {
+    position: absolute;
+    top: 41.5vw;
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Comp 5 */
+
+#comp5 {
+    position: absolute;
+    width: 100%;
+    top: 492vw;
+    height: 50vw;
+}
+
+#comp5 #planet {
+    top: 5vw;
+    width: 24vw;
+}
+
+#comp5 #planet-line {
+    top: 12vw;
+}
+
+#comp5 h4 {
+    width: 100%;
+    text-align: center;
+    top: 30vw;
+}
+
+#comp5 p {
+    position: absolute;
+    top: 36.5vw;
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Comp 6 */
+
+#comp6 {
+    position: absolute;
+    width: 100%;
+    top: 535vw;
+    height: 50vw;
+}
+
+#comp6 #planet {
+    top: 5vw;
+    width: 34vw;
+}
+
+#comp6 #planet-line {
+    top: 17vw;
+}
+
+#comp6 h4 {
+    width: 100%;
+    text-align: center;
+    top: 40vw;
+}
+
+#comp6 p {
+    position: absolute;
+    top: 46.5vw;
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* -------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    font-size: 1.25vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ajustement ici pour espacer les éléments sur toute la longueur */
+}
+
+footer nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Utilise Flexbox pour le positionnement des éléments de la liste */
+    align-items: center;
+}
+
+footer nav li {
+    margin-right: 24.5%;
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
+    color: inherit;
+    /* Hérite de la couleur du texte du header */
+    text-decoration: none;
+    /* Supprime le soulignement par défaut des liens */
+}
+
+footer img {
+    max-height: 100%;
+}
+
+#mailIcon {
+    width: 1.9vw;
+    margin-right: 5%;
+}
+
+#linkedinIcon {
+    width: 7.25vw;
+}
+
+#telIcon {
+    width: 1.5vw;
+    margin-right: 7%;
+}

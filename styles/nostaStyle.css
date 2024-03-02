@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'MSReferenceSansSerif';
+    src: url('../ressources/fonts/ms-reference-sans-serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBold';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBoldItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBold';
+    src: url('../ressources/fonts/GOTHICB.TTF') format('truetype'); /* Spécifie le chemin du fichier et le format de la police */
+    /* Tu peux ajouter d'autres propriétés ici, comme font-weight, font-style, etc. */
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'GothicBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
+    height: 1.5vw;
+    background-color: #171717;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
+    align-items: center;
+}
+
+header nav li {
+    padding-left: 9%;
+    margin-right: 8%;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    color: inherit; /* Hérite de la couleur du texte du header */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+header img {
+    max-height: 100%;
+    width: 3vw;
+    height: 3vw;
+    transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Pas de soulignement par défaut */
+}
+
+/* Styles lorsque la souris survole le lien */
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+header a:hover {
+    color: #FFE100; /* Changement de couleur au survol */
+}
+
+/* Main Content */
+
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background: url("../ressources/img/starry-bg.png");
+    background-size: 100% auto; /* Couvre la largeur, se répète en hauteur */
+    background-repeat: repeat-y; /* Se répète verticalement */
+    height: 95.75vw;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    height:70vw;
+    top:5vw;
+}
+
+main h1 {
+    width: 100%;
+    position: absolute;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    top: 5vw;
+}
+
+main img {
+    max-height: 100%;
+}
+
+#lilstar1 {
+    position: absolute;
+    user-select: none;
+    width:3vw;
+    top:13vw;
+    left:20vw;
+    transform: scaleX(-1) rotate(10deg);
+}
+
+#lilstar2 {
+    position: absolute;
+    user-select: none;
+    width: 4vw;
+    top:7vw;
+    left: 75vw;
+}
+
+main p {
+    font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
+    position: absolute;
+    top: 19vw;
+    left: 20.5%;
+    color: white;
+    font-size: 1vw;
+
+    width: 59vw;
+    /* background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vw; */
+    text-align: left;
+}
+
+#nosta {
+    width: 62vw;
+    position: absolute;
+    user-select: none;
+    top:27vw;
+    left: 18%;
+}
+
+/* -------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    font-size: 1.25vw;
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
+}
+
+footer nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
+    align-items: center;
+}
+
+footer nav li {
+    margin-right: 24.5%;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    color: inherit; /* Hérite de la couleur du texte du header */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+footer img {
+    max-height: 100%;
+}
+
+#mailIcon {
+    width: 1.9vw;
+    margin-right: 5%;
+}
+
+#linkedinIcon {
+    width: 7.25vw;
+}
+
+#telIcon {
+    width: 1.5vw;
+    margin-right: 7%;
+}
