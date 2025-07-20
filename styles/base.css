@@ -32,7 +32,7 @@ body {
 }
 
 main{
-	margin-top: 70px; /* pour ne pas prendre en compte le header */
+	margin-top: 80px; /* pour ne pas prendre en compte le header */
 }
 
 h1 {
