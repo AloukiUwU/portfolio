@@ -1,0 +1,39 @@
+
+
+footer {
+    background-image: url("/ressources/img/liste-projets-footer.png");
+	background-position: center;
+	min-height: 423px;  /* hauteur de l'image */
+
+	font-size: calc(5px 1vw);
+    text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
+
+	padding: 0 20px;
+}
+
+footer p{
+	margin: 0;
+}
+
+
+#mailIcon {
+    width: 20px;
+}
+
+#linkedinIcon {
+    height: 25px;
+}
+
+@media (max-width: 600px) {
+	footer {
+		flex-direction: column; 
+		align-items: flex-start;
+		justify-content: flex-end;
+		gap: 10px; 
+	}
+}

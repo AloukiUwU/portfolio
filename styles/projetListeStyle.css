@@ -1,106 +1,6 @@
-@font-face {
-    font-family: 'MSReferenceSansSerif';
-    src: url('../ressources/fonts/ms-reference-sans-serif.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MSReferenceSansSerifBold';
-    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MSReferenceSansSerifItalic';
-    src: url('../ressources/fonts/ms-reference-sans-serif-italic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MSReferenceSansSerifBoldItalic';
-    src: url('../ressources/fonts/ms-reference-sans-serif-bold-italic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicBold';
-    src: url('../ressources/fonts/GOTHICB.TTF') format('truetype'); /* Spécifie le chemin du fichier et le format de la police */
-    /* Tu peux ajouter d'autres propriétés ici, comme font-weight, font-style, etc. */
-}
-
-header {
-    z-index: 1000;
-    position: fixed;
-    width: 100%;
-    font-size: 1vw;
-    padding: 1vw;
-    text-align: center;
-    font-family: 'GothicBold', 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
-    height: 1.5vw;
-    background-color: #171717;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
-    align-items: center;
-}
-
-header nav li {
-    padding-left: 9%;
-    margin-right: 8%;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    color: inherit; /* Hérite de la couleur du texte du header */
-    text-decoration: none; /* Supprime le soulignement par défaut des liens */
-}
-
-header img {
-    max-height: 100%;
-    width: 3vw;
-    height: 3vw;
-    transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
-}
-
-a {
-    color: white;
-    text-decoration: none; /* Pas de soulignement par défaut */
-}
-
-/* Styles lorsque la souris survole le lien */
-a:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
-header a:hover {
-    color: #FFE100; /* Changement de couleur au survol */
-}
-
-/* Main Content */
-
-body {
-    color: white;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    background-color: #6F9CD6;
-    height: 110.05vw;
-}
-
-main {
-    width: 100%;
-    position: absolute;
-    height:70vw;
-    top:5vw;
-}
-
-main h1 {
-    width: 100%;
-    position: absolute;
-    font-size: 2.5vw;
-    text-align: center;
+h1 {
     font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-    top: 5vw;
+    padding: calc(50px + 4%) 0;
 } 
 
 main img {
@@ -108,160 +8,118 @@ main img {
 }
 
 #lilbun {
-    position: absolute;
+	position: absolute;
     user-select: none;
     width:16vw;
-    top:2.5vw;
+	max-width: 230px;
+	min-width: 130px;
+    top:calc(70px + 2.5vw);
     left:10vw;
 }
 
 #lilstar2 {
-    position: absolute;
+	position: absolute;
     user-select: none;
     width: 16vw;
-    top:8.5vw;
+	max-width: 230px;
+	min-width: 130px;
+    top:calc(160px + 2.5vw);
     left: 75vw;
     transform: scaleX(-1) rotate(20deg);
     
 }
 
-main table {
-    justify-content: space-between;
+#projets {
+    justify-content: space-around;
     display: flex;
     align-items: center;
-    width: 100%;
-    margin: 0;
+    margin: 0 40px;
     padding: 0;
-    top:22.5vw;
-    position: absolute;
+	gap: 15px; 
+	flex-wrap: wrap; 
 }
 
-main table tr {
-    width: 100%;
-    margin: 0;
-    padding-left: 13.6vw;
-    list-style: none;
-    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
-    align-items: center;
-    
+#projets a {
+	user-select: none;
+	border: 7px solid black; /* Épaisseur et couleur de la bordure */
+	border-radius: 15px;
+	position: relative;
+	z-index: 1;
 }
 
-main table td {
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    text-decoration: none; /* Supprime le soulignement par défaut des liens */
-    padding-right: 5%;
-    font-size: 1vw;
-    padding-bottom: 5%;
-}
-
-main table td p {
-    font-family: 'MSReferenceSansSerifBoldItalic', 'Arial', sans-serif;
-    font-size: 1vw;
-    position: absolute;
-}
-
-main table td h2 {
+#projets h2 {
     font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-    position: absolute;
-    font-size: 1vw;
     text-align: center;
     color:#303030;
 }
 
-#bagus p {
-    top: -0.5%;
-    left: 65.25%;
+#projets p {
+    font-family: 'MSReferenceSansSerifBoldItalic', 'Arial', sans-serif;
 }
 
-#bagus h2 {
-    top: 23%;
-    left: 72%;
+.projet{
+	background-size: cover;
+	width: 300px;
+	height: 300px;
 }
 
-#saveGod p {
-    top: 49.5%;
-    left: 15%;
+#bokena {
+	background-image: url("/ressources/img/bokenaIcon.png");
 }
 
-#saveGod h2 {
-    top: 73%;
-    left: 21.35%;
+#wof {
+	background-image: url("/ressources/img/wofIcon.png");
 }
 
-#more img {
-    border: 0;
-    border-radius: 0;
+#bagus, #saveGod{
+	background-image: url("/ressources/img/wipProjectIcon.png");
+}
+
+#bagus h2, #saveGod h2 { /*texte dans les bulles*/
+	margin: 160px 0 0 80px;
+	font-size: 16px;
+}
+
+#bagus p, #saveGod p { /* projet en cours */
+	margin: 0;
+	font-size: 15px;
+}
+
+#more {
+	background-image: url("/ressources/img/catgoat-liste-projets.png");
 }
 
 #more p {
-    top: 55.5%;
-    left: 40.35%;
+	user-select: none;
+	margin: 45px 130px 0 0;
     color:#303030;
     text-align: center;
 }
 
-main table img {
-    user-select: none;
-    width: 20vw;
-    border: 0.5vw solid black; /* Épaisseur et couleur de la bordure */
-    border-radius: 1vw;
+
+@media screen and (max-width: 650px) {
+	#lilbun {
+		display: none;
+	}
+
+	#lilstar2 {
+		display: none;
+	}
 }
 
-#footer-bg {
-    user-select: none;
-    position: absolute;
-    bottom: 0vw;
-    left: 0vw;
-    width: 100%;
-    z-index: -1;
-}
+@media screen and (max-width: 450px) {
+	.projet{
+		width: 250px;
+		height: 250px;
+	}
 
-/* -------- */
+	#bagus h2, #saveGod h2 { /*texte dans les bulles*/
+		margin: 130px 0 0 65px;
+		font-size: 12px;
+	}
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    background-color: rgba(0, 0, 0, 0);
-
-    font-size: 1.25vw;
-    text-align: center;
-    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
-}
-
-footer nav ul {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
-    align-items: center;
-}
-
-footer nav li {
-    margin-right: 24.5%;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    color: inherit; /* Hérite de la couleur du texte du header */
-    text-decoration: none; /* Supprime le soulignement par défaut des liens */
-}
-
-footer img {
-    max-height: 100%;
-}
-
-#mailIcon {
-    width: 1.9vw;
-    margin-right: 5%;
-}
-
-#linkedinIcon {
-    width: 7.25vw;
-}
-
-#telIcon {
-    width: 1.5vw;
-    margin-right: 7%;
+	#more p {
+		margin: 35px 100px 0 0;
+		font-size: 13px;
+	}
 }

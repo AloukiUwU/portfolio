@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'MSReferenceSansSerif';
+    src: url('../ressources/fonts/ms-reference-sans-serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBold';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBoldItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBold';
+    src: url('../ressources/fonts/GOTHICB.TTF') format('truetype');
+}
+
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    background-color: #6F9CD6;
+    min-height: 100vh;
+}
+
+main{
+	margin-top: 70px; /* pour ne pas prendre en compte le header */
+}
+
+h1 {
+    font-size: calc(10px 1.5vw);
+	text-align: center;
+} 

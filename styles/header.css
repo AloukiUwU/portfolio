@@ -1,0 +1,35 @@
+header {
+    z-index: 1000;
+    position: fixed;
+    width: 100vw;
+    font-size: calc(14px + .05vw);
+	height: 70px;
+    text-align: center;
+    font-family: 'GothicBold', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    background-color: #171717;
+	top: 0;
+	
+}
+
+header img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Pas de soulignement par défaut */
+}
+
+/* Styles lorsque la souris survole le lien */
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+header a:hover {
+    color: #FFE100; /* Changement de couleur au survol */
+}
