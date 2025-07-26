@@ -2,7 +2,7 @@ header {
     z-index: 1000;
     position: fixed;
 	top: 0;
-	height: 80px;
+
 	padding: 10px;
 	width: 100%;
 
@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-	gap: 15px;
+	column-gap: 30px;
 	flex-wrap: wrap;
 
     background-color: #171717;
@@ -37,4 +37,10 @@ a:hover {
 
 header a:hover {
     color: #FFE100; /* Changement de couleur au survol */
+}
+
+@media (max-width: 600px) {
+	header {
+		height: 80px;
+	}
 }
