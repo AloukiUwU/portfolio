@@ -86,7 +86,7 @@ main img {
 }
 
 #more {
-	background-image: url("/ressources/img/catgoat-liste-projets.png");
+	background-image: url("/ressources/img/liste-projets/catgoat-liste-projets.png");
 }
 
 #more p {
@@ -122,4 +122,10 @@ main img {
 		margin: 35px 100px 0 0;
 		font-size: 13px;
 	}
+}
+
+footer{
+	background-image: url("/ressources/img/liste-projets/footer-liste-projets.png");
+	background-position: center;
+	min-height: 572px;  
 }
