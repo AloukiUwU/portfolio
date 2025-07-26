@@ -3,9 +3,8 @@
 footer {
     background-image: url("/ressources/img/liste-projets-footer.png");
 	background-position: center;
-	min-height: 423px;  /* hauteur de l'image */
+	min-height: 572px;  /* hauteur de l'image */
 
-	font-size: calc(5px 1vw);
     text-align: center;
     font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
 
