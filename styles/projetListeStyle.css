@@ -1,19 +1,10 @@
-h1 {
-    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-    padding: calc(50px + 4%) 0;
-} 
-
-main img {
-    max-height: 100%;
-}
-
 #lilbun {
 	position: absolute;
     user-select: none;
     width:16vw;
 	max-width: 230px;
 	min-width: 130px;
-    top:calc(90px + 2.5vw);
+    top:calc(50px + 2.5vw);
     left:10vw;
 }
 
@@ -23,7 +14,7 @@ main img {
     width: 16vw;
 	max-width: 230px;
 	min-width: 130px;
-    top:calc(160px + 2.5vw);
+    top:calc(80px + 2.5vw);
     left: 75vw;
     transform: scaleX(-1) rotate(20deg);
     
@@ -125,7 +116,7 @@ main img {
 }
 
 footer{
-	background-image: url("/ressources/img/liste-projets/footer-liste-projets.png");
+	background-image: url("/ressources/img/footer/footer.png");
 	background-position: center;
 	min-height: 572px;  
 }
