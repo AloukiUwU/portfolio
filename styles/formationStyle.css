@@ -31,7 +31,7 @@ div > p {
     position: absolute;
     user-select: none;
     width:7vw;
-    top:3vw;
+    top:8vw;
     left:20vw;
     transform: scaleX(-1) rotate(-20deg);
 }
@@ -40,7 +40,7 @@ div > p {
     position: absolute;
     user-select: none;
     width: 4vw;
-    top:11vw;
+    top:12vw;
     left: 70vw;
     transform: rotate(-170deg);
 }
@@ -59,8 +59,7 @@ div > p {
 	padding: 260px 200px 220px 200px; /* différence haut/bas pour recentrer le texte, et différence gauche/droite pour remettre à la bonne taille */
 	z-index: 10;
 	position: relative;
-	/* top: -160px; */
-	transform: translateY(-160px);
+	top: -160px; 
 	left: -15px;
 }
 
@@ -71,8 +70,7 @@ div > p {
 	padding: 150px 130px;
 	z-index: 10;
 	position: relative;
-	/* top: -320px; */
-	transform: translateY(-320px);
+	top: -320px;
 	left: -15px;
 }
 
@@ -82,8 +80,7 @@ div > p {
 	padding: 130px 100px 130px 110px;
 	z-index: 10;
 	position: relative;
-	/* top: -430px; */
-	transform: translateY(-430px);
+	top: -430px;
 	left: -40px;
 }
 
@@ -117,12 +114,19 @@ div > p {
 
 }
 
+@media screen and (max-width: 900px) {
+
+	#lilstar1 {
+		top: 12vw;
+	}
+	
+}
+
 @media screen and (max-width: 685px) {
 
 	#but{
 		padding: 170px 130px 160px 130px;
 	}
-
 
 	#bac {
 		padding: 110px 90px;
@@ -130,6 +134,10 @@ div > p {
 
 	#base {
 		padding: 110px 80px 110px 90px;
+	}
+
+	#lilstar1, #lilstar2 {
+		display: none;
 	}
 
 }
@@ -142,7 +150,6 @@ div > p {
 	.transition{
 		width: 300px;
 	}
-
 
 	#but{
 		padding: 90px 50px 80px 50px;
@@ -161,10 +168,16 @@ div > p {
 
 	#but{
 		padding: 50px 10px 40px 10px;
+		left: 0;
 	}
 
 	#bac {
 		padding: 40px 10px;
+		left:0;
+	}
+
+	#base {
+		left:-25px;
 	}
 
 }
