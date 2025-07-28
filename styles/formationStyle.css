@@ -18,7 +18,7 @@ h2{
 
 div > p {
 	color: #000000;
-	font-size: calc(10px + .2vw);
+	font-size: calc(13px + .1vw);
 	text-align: center;
 	font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
 
@@ -56,32 +56,58 @@ div > p {
 	background-image: url("/ressources/img/formation/form-planet-but.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 200px 135px 200px 135px; /* différence gauche/droite pour remettre à la bonne taille */
 	z-index: 10;
+
+	width: 700px;
+	height: 700px;
+
 	position: relative;
 	top: -100px; 
 	left: -15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 
 #bac {
+	z-index: 10;
 	background-image: url("/ressources/img/formation/form-planet-bac.png");
 	background-size: cover;
-	padding: 150px 130px;
-	z-index: 10;
+	background-repeat: no-repeat;
+
+	width: 550px;
+	height: 550px;
+
 	position: relative;
 	top: -220px;
 	left: -15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #base {
+	z-index: 10;
     background-image: url("/ressources/img/formation/form-planet-base.png");
 	background-size: cover;
-	padding: 130px 100px 130px 110px;
-	z-index: 10;
+	background-repeat: no-repeat;
+
+	width: 300px;
+	height: 300px;
+
 	position: relative;
 	top: -340px;
 	left: -40px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #base h2 {
@@ -103,47 +129,24 @@ div > p {
 	top: -260px;
 }
 
-@media screen and (max-width: 1050px) {
-
-	#but {
-		padding: 210px 170px 200px 170px;
-	}
-
-	#but h2 {
-		padding: 20px 15px
-	}
-
-	#bac {
-		padding: 110px 90px;
-	}
-
-	#base {
-		padding: 110px 80px 110px 90px;
-	}
-
-}
-
 @media screen and (max-width: 900px) {
 
 	#lilstar1 {
 		top: 12vw;
 	}
-	
+
+	h2{
+		padding: 20px 40px;
+	}
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 750px) {
 
 	#but{
-		padding: 170px 130px 160px 130px;
+		width: 500px;
+		height: 500px;
 	}
 
-	#bac {
-		padding: 110px 90px;
-	}
-
-	#base {
-		padding: 110px 80px 110px 90px;
-	}
 
 	#lilstar1, #lilstar2 {
 		display: none;
@@ -152,6 +155,10 @@ div > p {
 }
 
 @media screen and (max-width: 600px) {
+
+	h2 {
+		padding: 15px 30px
+	}
 
 	#bg-start {
 		width: 300px;
@@ -164,25 +171,17 @@ div > p {
 
 	#transition2 {
 		width: 300px;
-
+		top: -180px;
 	}
 
 	#but{
-		padding: 90px 50px 80px 50px;
 		top: -50px;
 	}
 
-	h2 {
-		padding: 10px 15px
-	}
-
 	#bac {
-		padding: 70px 40px;
+		width: 400px;
+		height: 400px;
 		top: -150px;
-	}
-
-	#transition2{
-		top: -180px;
 	}
 
 	#base{
@@ -193,17 +192,19 @@ div > p {
 @media screen and (max-width: 500px) {
 
 	#but{
-		padding: 50px 10px 40px 10px;
+		width: 400px;
+		height: 400px;
 		left: 0;
 	}
 
 	#bac {
-		padding: 40px 10px;
+		width: 370px;
+		height: 370px;
 		left:0;
 	}
 
 	#base {
-		left:-25px;
+		left:-15px;
 	}
 
 }
