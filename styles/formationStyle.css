@@ -18,7 +18,7 @@ h2{
 
 div > p {
 	color: #000000;
-	font-size: calc(13px + .1vw);
+	font-size: calc(12px + .1vw);
 	text-align: center;
 	font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
 
@@ -53,24 +53,22 @@ div > p {
 }
 
 #but {
+	z-index: 10;
 	background-image: url("/ressources/img/formation/form-planet-but.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	z-index: 10;
 
 	width: 700px;
 	height: 700px;
 
 	position: relative;
 	top: -100px; 
-	left: -15px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-
 
 #bac {
 	z-index: 10;
@@ -83,7 +81,6 @@ div > p {
 
 	position: relative;
 	top: -220px;
-	left: -15px;
 
 	display: flex;
 	flex-direction: column;
@@ -102,12 +99,15 @@ div > p {
 
 	position: relative;
 	top: -340px;
-	left: -40px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.planet-text{
+	max-width: 350px;
 }
 
 #base h2 {
@@ -194,17 +194,23 @@ div > p {
 	#but{
 		width: 400px;
 		height: 400px;
-		left: 0;
 	}
 
 	#bac {
 		width: 370px;
 		height: 370px;
-		left:0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	h2 {
+		font-size: calc(11px + .3vw);
+		padding: 10px 20px;
 	}
 
-	#base {
-		left:-15px;
+	.planet-text {
+		font-size: calc(10px + .1vw);
+		max-width: 300px;
 	}
-
 }
