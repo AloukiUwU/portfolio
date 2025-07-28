@@ -55,15 +55,15 @@
 }
 
 #bokena {
-	background-image: url("/ressources/img/bokenaIcon.png");
+	background-image: url("/ressources/img/common/bokenaIcon.png");
 }
 
 #wof {
-	background-image: url("/ressources/img/wofIcon.png");
+	background-image: url("/ressources/img/common/wofIcon.png");
 }
 
 #bagus, #saveGod{
-	background-image: url("/ressources/img/wipProjectIcon.png");
+	background-image: url("/ressources/img/common/wipProjectIcon.png");
 }
 
 #bagus h2, #saveGod h2 { /*texte dans les bulles*/
