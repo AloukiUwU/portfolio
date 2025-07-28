@@ -56,10 +56,10 @@ div > p {
 	background-image: url("/ressources/img/formation/form-planet-but.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 260px 200px 220px 200px; /* différence haut/bas pour recentrer le texte, et différence gauche/droite pour remettre à la bonne taille */
+	padding: 200px 135px 200px 135px; /* différence gauche/droite pour remettre à la bonne taille */
 	z-index: 10;
 	position: relative;
-	top: -160px; 
+	top: -100px; 
 	left: -15px;
 }
 
@@ -70,7 +70,7 @@ div > p {
 	padding: 150px 130px;
 	z-index: 10;
 	position: relative;
-	top: -320px;
+	top: -220px;
 	left: -15px;
 }
 
@@ -80,7 +80,7 @@ div > p {
 	padding: 130px 100px 130px 110px;
 	z-index: 10;
 	position: relative;
-	top: -430px;
+	top: -340px;
 	left: -40px;
 }
 
@@ -93,6 +93,15 @@ div > p {
 	border-radius: 5px;
 }
 
+#transition1{
+	position: relative;
+	top: -180px;
+}
+
+#transition2{
+	position: relative;
+	top: -260px;
+}
 
 @media screen and (max-width: 1050px) {
 
@@ -147,12 +156,20 @@ div > p {
 	#bg-start {
 		width: 300px;
 	}
-	.transition{
+
+	#transition1 {
 		width: 300px;
+		top: -110px;
+	}
+
+	#transition2 {
+		width: 300px;
+
 	}
 
 	#but{
 		padding: 90px 50px 80px 50px;
+		top: -50px;
 	}
 
 	h2 {
@@ -161,6 +178,15 @@ div > p {
 
 	#bac {
 		padding: 70px 40px;
+		top: -150px;
+	}
+
+	#transition2{
+		top: -180px;
+	}
+
+	#base{
+		top: -260px;
 	}
 }
 
