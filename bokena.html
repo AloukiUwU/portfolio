@@ -5,33 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bokena</title>
-    <link rel="stylesheet" href="styles/projet-bokena.css"> <!-- Lien vers le fichier CSS -->
-    <script src="js/spinCatHeader.js"></script> <!-- Lien vers le fichier JavaScript -->
+	<link rel="icon" href="ressources/img/common/Catgoat.png" type="image/png">
+
+	<link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-projets.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/spinCatHeader.js"></script>
 </head>
 
-<body>
+<body projet="bokena"> <!-- pour le javascript aléatoire -->
     <header>
-        <nav>
-            <ul>
-                <li><img id="catgoatIcon" src="ressources/img/common/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()"></li>
-                <li><a href="index.html">DENIS, PROGRAMMEUR DE JEUX VIDÉO</a></li>
-                <li><a href="projets.html">PROJETS</a></li>
-                <li><a href="skills.html">COMPÉTENCES</a></li>
-                <li><a href="nosta.html">NOSTa</a></li>
-                <li><a href="formation.html">PARCOURS</a></li>
-                <li><a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a></li>
-                <!-- Ajoute d'autres liens de navigation selon tes besoins -->
-            </ul>
-        </nav>
+        <img id="catgoatIcon" src="ressources/img/common/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()">
+        <a href="index.html">DENIS, PROGRAMMEUR DE JEUX VIDÉO</a>
+        <a href="projets.html">PROJETS</a>
+        <a href="formation.html">PARCOURS</a>
+        <a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a>
     </header>
 
-    <!-- Main Page Image -->
     <main>
-        <img id="header" src="ressources/img/bokena-header.png">
-        <img id="cloudheader" src="ressources/img/projet-header.png">
-        <h2 id="h2-contexte">CONTEXTE</h2>
-        <img id="star" src="ressources/img/projet-star.png">
-        <div id="contexte">
+        <img id="img-header" src="ressources/img/projets/bokena/bokena-header.png">
+
+        <h2>CONTEXTE</h2>
+        
+        <div class="container">
+			<img id="star" src="ressources/img/projets/projet-star.png">
             <p>
                 Afin de tester mon savoir des jeux 2D sur un vrai projet, j’ai créé
                 entièrement un jeu de plateforme sur Unity. Je devais au moins
@@ -48,90 +47,56 @@
             </p>
         </div>
 
-        <h2 id="h2-etapes">ÉTAPES</h2>
-        <img id="rocket" src="ressources/img/projet-rocket.png">
-        <div id="etapes">
-            <ol>
-                <li>
-                    Réflexions sur le style du jeu, son gameplay en
-                    profondeur, et ses environnements
-                </li>
-                <li>
-                    Recherche et réalisation des ressources graphiques
-                </li>
-                <li>
-                    Développement des managers et controllers du jeu
-                </li>
-                <li>
-                    Implémentation du premier niveau
-                </li>
-                <li>
-                    Implémentation du menu principal et du menu pause
-                </li>
-                <li>
-                    Implémentation du second niveau et ses différentes
-                    mécaniques
-                </li>
-                <li>
-                    Composition des musiques du jeu (menu, niveau 1 et
-                    niveau 2)
-                </li>
-                <li>
-                    Implémentation du menu pour modifier les paramètres
-                    d’équilibrage
-                </li>
-            </ol>
-        </div>
+        <h2>PRINCIPE DU JEU</h2>
 
-        <h2 id="h2-principe">PRINCIPE DU JEU</h2>
-        <ul id="pictures">
-            <li>
-                <img id="" src="ressources/img/bokena1.png">
-                <h3>Grosse Pièce gardée par un capybara</h3>
-            </li>
-            <li>
-                <img id="" src="ressources/img/bokena2.png">
-                <h3>Obtention d'un power-up</h3>
-            </li>
-            <li>
-                <img id="" src="ressources/img/bokena3.png">
-                <h3>Différents ennemis du jeu</h3>
-            </li>
-        </ul>
-        <div id="principe">
-            <p>
-                Bokena (nom inspiré de « bōken » signifiant « aventure » en japonais) est un jeu au style
-                pixel coloré où le but de chacun de ses 2 niveaux sera d’atteindre la gemme colorée en
-                collectant le maximum de pièces. Des power-ups de Dash (bond en avant) et de double-
-                saut ont été implémentés, en plus de collectibles rares (Grosse Pièce) à trouver à chaque
-                niveau. Deux types d’ennemis sont présents :<br><br>
+        <div class="container" id="pictures">
+			<div>
+				<img src="ressources/img/projets/bokena/bokena1.png">
+				<h3>Grosse Pièce gardée par un capybara</h3>
+			</div>
+			<div>
+				<img src="ressources/img/projets/bokena/bokena2.png">
+				<h3>Obtention d'un power-up</h3>
+			</div>
+			<div>
+				<img src="ressources/img/projets/bokena/bokena3.png">
+				<h3>Différents ennemis du jeu</h3>
+			</div>
+		</div>
 
-                - les slimes qui peuvent sauter pour vous poursuivre, mais vaincus en un saut sur leurs
-                têtes<br>
-                - les monstres de cavernes, plus lents que les slimes et dénués de saut, mais plus
-                résistants et plus puissants.<br><br>
+		<p>
+			Bokena (nom inspiré de « bōken » signifiant « aventure » en japonais) est un jeu au style
+			pixel coloré où le but de chacun de ses 2 niveaux sera d’atteindre la gemme colorée en
+			collectant le maximum de pièces. Des power-ups de Dash (bond en avant) et de double-
+			saut ont été implémentés, en plus de collectibles rares (Grosse Pièce) à trouver à chaque
+			niveau. Deux types d’ennemis sont présents :<br><br>
 
-                Dans le niveau 1, vous commencez dans des plaines ensoleillées où les power-ups et les
-                pièces sont faciles à atteindre. Pénétrez ensuite dans la caverne dont l’entrée ressemble
-                à une mâchoire pour y trouver la gemme colorée (et d’autres surprises...).<br><br>
+			- les slimes qui peuvent sauter pour vous poursuivre, mais vaincus en un saut sur leurs
+			têtes<br>
+			- les monstres de cavernes, plus lents que les slimes et dénués de saut, mais plus
+			résistants et plus puissants.<br><br>
 
-                Dans le niveau 2, après avoir continué dans la grotte du niveau, vous vous retrouvez
-                dans ses profondeurs glacées. Il existe 3 passages secrets vous permettant d’obtenir les
-                power-ups de ce niveau. Vous trouverez encore plus de chemins différents pour atteindre
-                l’arrivée dans ce niveau. C’est dans ces profondeurs glaciales que les monstres des
-                cavernes apparaissent et que des stalactites peuvent vous tomber dessus. Prenez garde !
-            </p>
-        </div>
+			Dans le niveau 1, vous commencez dans des plaines ensoleillées où les power-ups et les
+			pièces sont faciles à atteindre. Pénétrez ensuite dans la caverne dont l’entrée ressemble
+			à une mâchoire pour y trouver la gemme colorée (et d’autres surprises...).<br><br>
 
-        <h2 id="h2-conclusion">BOKENA, UN PLATFORMER COLORÉ<br>QUE J'AI ADORÉ DÉVELOPPER</h2>
-        <img id="fin" src="ressources/img/projet-fin.png">
-        <div id="conclusion">
+			Dans le niveau 2, après avoir continué dans la grotte du niveau, vous vous retrouvez
+			dans ses profondeurs glacées. Il existe 3 passages secrets vous permettant d’obtenir les
+			power-ups de ce niveau. Vous trouverez encore plus de chemins différents pour atteindre
+			l’arrivée dans ce niveau. C’est dans ces profondeurs glaciales que les monstres des
+			cavernes apparaissent et que des stalactites peuvent vous tomber dessus. Prenez garde !
+		</p>
+
+        <h2>BOKENA, UN PLATFORMER COLORÉ<br>QUE J'AI ADORÉ DÉVELOPPER</h2>
+        
+        <div class="container">
+			<img id="fin" src="ressources/img/projets/projet-fin.png">
             <p>
                 Bokena a été comme mon premier vrai jeu vidéo à moi. Des années
                 auparavant, je faisais de petits jeux sur Scratch, mais je savais que
                 ce n’était pas grand-chose par rapport à ce que l’on peut faire avec
                 des moteurs plus performants. Grâce à Bokena, j’ai su ce dont j’étais
-                capable en 2mois de développement. Travailler les sfx, les musiques,
+                capable en 2 mois de développement. Travailler les sfx, les musiques,
                 l’interface utilisateur, le level design, le game design et mes
                 compétences en programmation sur Unity a été un réel bonheur pour
                 moi. Je n’ai rencontré que des difficultés minimes. Par exemple, je
@@ -150,60 +115,47 @@
         </div>
 
         <div id="trailer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PRyd5LKL0_0?si=YeVUW0KEteWF6LDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="755" height="425" src="https://www.youtube.com/embed/kSTSGo_v7g0?si=YeVUW0KEteWF6LDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3>
-                Bande-annonce du jeu (<a style="color: #FFE100;" href="https://youtu.be/PRyd5LKL0_0?si=9sxfGv0mgv6l1mbv">ici aussi</a>)
+                Bande-annonce du jeu (<a href="https://youtu.be/PRyd5LKL0_0?si=9sxfGv0mgv6l1mbv">ici aussi</a>)
             </h3>
         </div>
 
-        <h2 id="h2-explore">EXPLOREZ D'AUTRES<br>DE MES PROJETS</h2>
-        <ul id="explore">
-            <li>
-                <a href="wof.html">
-                    <img id="WOF" src="ressources/img/wofIcon.png">
-                </a>
-            </li>
-            <li>
-                <a id="bagus" href="bagus.html">
-                    <img id="WIP" src="ressources/img/wipProjectIcon.png">
-                    <p>Projet en cours...</p>
-                    <h4>- BAGUS ASCENT -<br>
-                    TURN-BASED RPG</h4>
-                </a>
-            </li>
-            <li>
-                <a id="saveGod" href="saveGod.html">
-                    <img id="WIP" src="ressources/img/wipProjectIcon.png">
-                    <p>Projet en cours...</p>
-                    <h4>- SAVE GOD -<br>
-                    ROGUELITE PUZZLE</h4>
-                </a>
-            </li>
-        </ul>
+        <h2>EXPLOREZ D'AUTRES<br>DE MES PROJETS</h2>
+        <div id="projets">
+			<a href="wof.html" id="wof" class="projet">
+			</a>
+			<a href="bagus.html" id="bagus" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- BAGUS ASCENT -<br>
+				TURN-BASED RPG</h2>
+			</a>
 
-        <div id="moreProjects">
+			<a href="saveGod.html" id="saveGod" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- SAVE GOD -<br>
+				ROGUELITE PUZZLE</h2>
+			</a>
+        </div>
+
+        <div id="moreProjects" class="star-button">
             <a href="projets.html">
-            <img src="ressources/img/starryButton.png">
-                <p>
-                    Tous mes projets
-                </p>
+                Tous mes projets
             </a>
         </div>
     </main>
-    <img id="footer-bg" src="ressources/img/liste-projets-footer.png">
-    <footer>
-    <nav>
-        <ul>
-            <li>&copy; 2025 Denis Trimolet</li>
-            <!-- Icône de mail + texte du mail -->
-            <li><a href="mailto:denis.trimolet@gmail.com">
-                <img id="mailIcon" src="ressources/img/mailIcon.png">denis.trimolet@gmail.com</a>
-            </li>
-            <!-- Icône de linked in> -->
-            <li><a href="https://www.linkedin.com/in/denis-trimolet" target="_blank"><img id="linkedinIcon" src="ressources/img/LinkedinIcon.png"></a></li>
-        </ul>
-    </nav>
-</footer>
+	<footer>
+		<p>&copy; 2025 Denis Trimolet</p>
+		<!-- Icône de mail + texte du mail -->
+		<a href="mailto:denis.trimolet@gmail.com" id="mail">
+			<img id="mailIcon" src="ressources/img/footer/mailIcon.png"> denis.trimolet@gmail.com
+		</a>
+		<!-- Icône de linked in> -->
+		<a href="https://www.linkedin.com/in/denis-trimolet" target="_blank">
+			<img id="linkedinIcon" src="ressources/img/footer/LinkedinIcon.png">
+		</a>
+	</footer>
+	<script src="js/showRandomProjects.js"></script>
 </body>
 
 </html>

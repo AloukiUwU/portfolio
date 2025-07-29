@@ -5,33 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works of Friendship</title>
-    <link rel="stylesheet" href="styles/projet-wof.css"> <!-- Lien vers le fichier CSS -->
-    <script src="js/spinCatHeader.js"></script> <!-- Lien vers le fichier JavaScript -->
+	<link rel="icon" href="ressources/img/common/Catgoat.png" type="image/png">
+
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/base-projets.css"> <!-- fichier css pour légers correctifs -->
+    <link rel="stylesheet" href="styles/projet-wof.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/spinCatHeader.js"></script>
 </head>
 
-<body>
+<body projet="wof"> <!-- pour le javascript aléatoire -->
     <header>
-        <nav>
-            <ul>
-                <li><img id="catgoatIcon" src="ressources/img/common/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()"></li>
-                <li><a href="index.html">DENIS, PROGRAMMEUR DE JEUX VIDÉO</a></li>
-                <li><a href="projets.html">PROJETS</a></li>
-                <li><a href="skills.html">COMPÉTENCES</a></li>
-                <li><a href="nosta.html">NOSTa</a></li>
-                <li><a href="formation.html">PARCOURS</a></li>
-                <li><a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a></li>
-                <!-- Ajoute d'autres liens de navigation selon tes besoins -->
-            </ul>
-        </nav>
+        <img id="catgoatIcon" src="ressources/img/common/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()">
+        <a href="index.html">DENIS, PROGRAMMEUR DE JEUX VIDÉO</a>
+        <a href="projets.html">PROJETS</a>
+        <a href="formation.html">PARCOURS</a>
+        <a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a>
     </header>
 
-    <!-- Main Page Image -->
     <main>
-        <img id="header" src="ressources/img/wof-header.png">
-        <img id="cloudheader" src="ressources/img/projet-header.png">
-        <h2 id="h2-contexte">CONTEXTE</h2>
-        <img id="star" src="ressources/img/projet-star.png">
-        <div id="contexte">
+        <img id="img-header" src="ressources/img/projets/wof/wof-header.png">
+        <h2>CONTEXTE</h2>
+        
+        <div class="container">
+			<img id="star" src="ressources/img/projets/projet-star.png">
             <p>
                 Un musée prestigieux fait un appel d'offres à des agences de VR, RA, jeux (dans lesquelles évoluent des
                 employés en programmation / développement lié à l’imagerie et des infographistes pour la VR, RA,
@@ -43,66 +42,36 @@
                 œuvres de notre choix de différents artistes donnés. Nous avions la liberté du moteur graphique à
                 utiliser. Ma tâche était de composer la musique du jeu, écrire sa mise en scène, modéliser une œuvre de
                 l’artiste Samsofi et d’animer une œuvre de l’artiste Keith Haring.
-
             </p>
         </div>
 
-        <h2 id="h2-etapes">ÉTAPES</h2>
-        <img id="rocket" src="ressources/img/projet-rocket.png">
-        <div id="etapes">
-            <ol>
-                <li>
-                    Écriture d’une mise en scène simple pour le jeu
-                </li>
-                <li>
-                    Recherche de modèles gratuits pouvant m’aider pour l’œuvre de Samsofi
-                </li>
-                <li>
-                    Modélisation complète de l’œuvre
-                </li>
-                <li>
-                    Application correcte des textures à l’œuvre
-                </li>
-                <li>
-                    Animation de l’œuvre de Keith Haring
-                </li>
-                <li>
-                    Composition d’une musique pour l’ambiance pesante
-                </li>
-                <li>
-                    Implémentation des œuvres dans le jeu sur Unreal
-                </li>
-            </ol>
-        </div>
-
-        <h2 id="h2-principe">PRINCIPE DU JEU</h2>
-        <ul id="pictures">
-            <li>
-                <img src="ressources/img/wof1.png">
+        <h2>PRINCIPE DU JEU</h2>
+        <div id="pictures" class="container">
+            <div>
+                <img src="ressources/img/projets/wof/wof1.png">
                 <h3>Grosse Pièce gardée par un capybara</h3>
-            </li>
-            <li>
-                <img id="wof2" src="ressources/img/wof2.gif">
-                <h3 id="wof2-p">"Bests Buddies" de Keith Haring, mais animé</h3>
-            </li>
-            <li>
-                <img src="ressources/img/wof3.png">
+            </div>
+            <div>
+                <img id="wof2" src="ressources/img/projets/wof/wof2.gif">
+                <h3>"Bests Buddies" de Keith Haring, mais animé</h3>
+            </div>
+            <div>
+                <img src="ressources/img/projets/wof/wof3.png">
                 <h3>Vue de haut du temple</h3>
-            </li>
-        </ul>
-        <div id="principe">
-            <p>
-                Works of Friendship (Œuvres d’amitié) est un jeu développé sur Unreal Engine où l’on doit aider un
-                mystérieux lion doré à retrouver son ami dans un temple remplis d’autres personnages étranges... Le jeu
-                se présente comme une expérience dans un environnement lugubre et à l’atmosphère pesante et étrange où
-                le joueur visite le temple et peut parler avec chacun des personnages (œuvres) à l’intérieur pour tenter
-                de retrouver le véritable ami du lion doré pour finir le jeu.
-            </p>
+            </div>
         </div>
+		<p>
+			Works of Friendship (Œuvres d’amitié) est un jeu développé sur Unreal Engine où l’on doit aider un
+			mystérieux lion doré à retrouver son ami dans un temple remplis d’autres personnages étranges... Le jeu
+			se présente comme une expérience dans un environnement lugubre et à l’atmosphère pesante et étrange où
+			le joueur visite le temple et peut parler avec chacun des personnages (œuvres) à l’intérieur pour tenter
+			de retrouver le véritable ami du lion doré pour finir le jeu.
+		</p>
 
-        <h2 id="h2-conclusion">WORKS OF FRIENDSHIP,<br>UNE EXPÉRENCE RÉELLE ET FICTIVE</h2>
-        <img id="fin" src="ressources/img/projet-fin.png">
-        <div id="conclusion">
+        <h2>WORKS OF FRIENDSHIP,<br>UNE EXPÉRENCE RÉELLE ET FICTIVE</h2>
+        
+        <div class="container">
+			<img id="fin" src="ressources/img/projets/projet-fin.png">
             <p>
                 Works of Friendship, c’est avant tout un travail d’équipe. On s’est réparti équitablement les tâches
                 selon les affinités de chacun. Je suis encore aujourd’hui fier d’avoir été responsable de la partie
@@ -127,54 +96,41 @@
             </p>
         </div>
 
-        <h2 id="h2-explore">EXPLOREZ D'AUTRES<br>DE MES PROJETS</h2>
-        <ul id="explore">
-            <li>
-                <a id="bagus" href="bagus.html">
-                    <img id="WIP" src="ressources/img/wipProjectIcon.png">
-                    <p>Projet en cours...</p>
-                    <h4>- BAGUS ASCENT -<br>
-                        TURN-BASED RPG</h4>
-                </a>
-            </li>
-            <li>
-                <a id="saveGod" href="saveGod.html">
-                    <img id="WIP" src="ressources/img/wipProjectIcon.png">
-                    <p>Projet en cours...</p>
-                    <h4>- SAVE GOD -<br>
-                        ROGUELITE PUZZLE</h4>
-                </a>
-            </li>
-            <li>
-                <a href="bokena.html">
-                    <img id="BOKENA" src="ressources/img/bokenaIcon.png">
-                </a>
-            </li>
-        </ul>
+        <h2>EXPLOREZ D'AUTRES<br>DE MES PROJETS</h2>
+        <div id="projets">
+			<a href="bokena.html" id="bokena" class="projet">
+			</a>
+			<a href="bagus.html" id="bagus" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- BAGUS ASCENT -<br>
+				TURN-BASED RPG</h2>
+			</a>
 
-        <div id="moreProjects">
+			<a href="saveGod.html" id="saveGod" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- SAVE GOD -<br>
+				ROGUELITE PUZZLE</h2>
+			</a>
+        </div>
+
+        <div id="moreProjects" class="star-button">
             <a href="projets.html">
-                <img src="ressources/img/starryButton.png">
-                <p>
-                    Tous mes projets
-                </p>
+                Tous mes projets
             </a>
         </div>
     </main>
-    <img id="footer-bg" src="ressources/img/liste-projets-footer.png">
     <footer>
-    <nav>
-        <ul>
-            <li>&copy; 2025 Denis Trimolet</li>
-            <!-- Icône de mail + texte du mail -->
-            <li><a href="mailto:denis.trimolet@gmail.com">
-                <img id="mailIcon" src="ressources/img/mailIcon.png">denis.trimolet@gmail.com</a>
-            </li>
-            <!-- Icône de linked in> -->
-            <li><a href="https://www.linkedin.com/in/denis-trimolet" target="_blank"><img id="linkedinIcon" src="ressources/img/LinkedinIcon.png"></a></li>
-        </ul>
-    </nav>
-</footer>
+		<p>&copy; 2025 Denis Trimolet</p>
+		<!-- Icône de mail + texte du mail -->
+		<a href="mailto:denis.trimolet@gmail.com" id="mail">
+			<img id="mailIcon" src="ressources/img/footer/mailIcon.png"> denis.trimolet@gmail.com
+		</a>
+		<!-- Icône de linked in> -->
+		<a href="https://www.linkedin.com/in/denis-trimolet" target="_blank">
+			<img id="linkedinIcon" src="ressources/img/footer/LinkedinIcon.png">
+		</a>
+	</footer>
+	<script src="js/showRandomProjects.js"></script>
 </body>
 
 </html>

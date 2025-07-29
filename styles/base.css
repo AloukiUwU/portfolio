@@ -32,7 +32,7 @@ body {
 }
 
 main{
-	margin-top: 80px; /* pour ne pas prendre en compte le header */
+	margin-top: 60px; /* pour prendre en compte le header */
 }
 
 h1 {
@@ -40,4 +40,11 @@ h1 {
 	text-align: center;
     font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
     padding: 50px 0 calc(50px + 4%) 0;
-} 
+}
+
+.star-button {
+	background-image: url("/ressources/img/common/starryButton.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}

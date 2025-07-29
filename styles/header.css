@@ -5,6 +5,7 @@ header {
 
 	padding: 10px 25px;
 	width: calc(100vw - 50px); /* -50px est la somme de 25*2 */
+	height: 60px;
 
     font-size: calc(14px + .05vw);
     text-align: center;
@@ -40,7 +41,12 @@ header a:hover {
 }
 
 @media (max-width: 600px) {
-	header {
+
+	header{
 		height: 80px;
+	}
+
+	main{
+		margin-top: 80px; /* pour ne pas prendre en compte le header */
 	}
 }
