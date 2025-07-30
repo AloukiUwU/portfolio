@@ -1,41 +1,30 @@
 (() => {
-	const projects = ["bokena", "wof", "bagus", "saveGod"]
+	const projectsAvailable = ["bokena", "wof", "bagus", "saveGod"] // Les noms de projets doivent match avec les id css et les noms de pages html
 
 	const currentProject = document.body.getAttribute("projet");
 
-	const filteredProjects = projects.filter(project => project !== currentProject);
+	const filteredProjects = projectsAvailable.filter(project => project !== currentProject); // enlève le projet courant de la liste
 
-	const numbers = [];
-	while (numbers.length < 3) {
+	const projects = []
+	while (projects.length < 3 && filteredProjects.length > 0) { // on prend 3 projets au hasard
 		const randomNumber = Math.floor(Math.random() * filteredProjects.length);
-		if (!numbers.includes(randomNumber)) {
-			numbers.push(randomNumber);
-		}
+		projects.push(filteredProjects[randomNumber]);
+		filteredProjects.splice(randomNumber, 1); // on retire le projet choisi pour ne pas le choisir à nouveau
 	}
 
 	const projectContainer = document.getElementById("projets");
 
-	for (const number of numbers) {
-		const randomProject = filteredProjects[number];
+	for (const project of projects) {
 		const a = document.createElement("a");
-		switch (randomProject) { 
+		a.href = project + ".html";
+		a.id = project;
+		a.classList.add("projet");
+
+		switch (project) { 
 			case "bokena":
-				a.href = "bokena.html";
-				a.id = "bokena";
-				a.classList.add("projet")
-				break;
-
 			case "wof":
-				a.href = "wof.html";
-				a.id = "wof";
-				a.classList.add("projet")
 				break;
-
 			case "bagus":
-				a.href = "bagus.html";
-				a.id = "bagus";
-				a.classList.add("projet")
-
 				const p = document.createElement("p");
 				p.textContent = "Projet en cours...";
 				a.appendChild(p);
@@ -46,10 +35,6 @@
 				break;
 
 			case "saveGod":
-				a.href = "saveGod.html";
-				a.id = "saveGod";
-				a.classList.add("projet")
-
 				const p2 = document.createElement("p");
 				p2.textContent = "Projet en cours...";
 				a.appendChild(p2);
@@ -60,10 +45,10 @@
 				break;
 
 			default:
-				console.error("Projet inconnu:", randomProject);
+				console.error("Projet inconnu:", project);
 				break;
 		}
 
-		// projectContainer.appendChild(a);
+		//projectContainer.appendChild(a);
 	}
 })()
