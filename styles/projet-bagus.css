@@ -1,12 +1,13 @@
 h1 {
 	position: absolute;
 	top: 200px;
-	font-size: calc(30px + .3vw);
+	font-size: calc(60px + .3vw);
 }
 
 @media screen and (max-width: 1050px) {
 
 	h1 {
+		font-size: calc(40px + .3vw);
 		top: 120px;
 	}
 
