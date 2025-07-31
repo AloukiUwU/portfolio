@@ -1,10 +1,10 @@
 #lilbun {
 	position: absolute;
     user-select: none;
-    width:16vw;
+    width:15vw;
 	max-width: 230px;
 	min-width: 130px;
-    top:calc(50px + 2.5vw);
+    top:calc(60px + 2.5vw);
     left:10vw;
 }
 
@@ -17,7 +17,6 @@
     top:calc(80px + 2.5vw);
     left: 75vw;
     transform: scaleX(-1) rotate(20deg);
-    
 }
 
 #projets {
