@@ -49,6 +49,6 @@
 				break;
 		}
 
-		//projectContainer.appendChild(a);
+		projectContainer.appendChild(a);
 	}
 })()
