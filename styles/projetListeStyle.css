@@ -116,6 +116,8 @@
 
 footer{
 	background-image: url("/ressources/img/footer/footer.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-position: center;
 	min-height: 572px;  
 }
