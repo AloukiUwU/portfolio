@@ -7,7 +7,7 @@ header {
 	width: calc(100vw - 50px); /* -50px est la somme de 25*2 */
 	height: 60px;
 
-    font-size: calc(14px + .05vw);
+    font-size: calc(18px + .05vw);
     text-align: center;
     font-family: 'GothicBold', 'Arial', sans-serif;
 
@@ -21,8 +21,8 @@ header {
 }
 
 header img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
 }
 
@@ -38,6 +38,18 @@ a:hover {
 
 header a:hover {
     color: #FFE100; /* Changement de couleur au survol */
+}
+
+@media screen and (max-width: 1400px) {
+	header {
+		font-size: calc(14px + .05vw);
+	}
+
+	header img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
+}
 }
 
 @media (max-width: 600px) {

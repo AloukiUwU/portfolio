@@ -8,7 +8,7 @@ footer {
     align-items: flex-end;
     justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
 
-	padding: 0 20px;
+	padding: 0 20px 20px 20px;
 }
 
 footer p{
