@@ -57,20 +57,28 @@
 	background-image: url("/ressources/img/common/bokenaIcon.png");
 }
 
-#wof {
-	background-image: url("/ressources/img/common/wofIcon.png");
+#bagus {
+	background-image: url("/ressources/img/common/bagusIcon.png");
 }
 
-#bagus, #saveGod{
+#tasqManager {
+	background-image: url("/ressources/img/common/tasqManagerIcon.png");
+}
+
+#handicapy {
+	background-image: url("/ressources/img/common/handicapyIcon.png");
+}
+
+#ballemssoyr {
 	background-image: url("/ressources/img/common/wipProjectIcon.png");
 }
 
-#bagus h2, #saveGod h2 { /*texte dans les bulles*/
+#ballemssoyr h2 { /*texte dans les bulles*/
 	margin: 160px 0 0 80px;
 	font-size: 16px;
 }
 
-#bagus p, #saveGod p { /* projet en cours */
+#ballemssoyr p { /* projet en cours */
 	margin: 0;
 	font-size: 15px;
 }

@@ -1,5 +1,5 @@
 (() => {
-	const projectsAvailable = ["bokena", "wof", "bagus", "saveGod"] // Les noms de projets doivent match avec les id css et les noms de pages html
+	const projectsAvailable = ["bokena", "bagus", "tasqManager", "handicapy", "ballemssoyr"] // Les noms de projets doivent match avec les id css et les noms de pages html
 
 	const currentProject = document.body.getAttribute("projet");
 
@@ -22,30 +22,22 @@
 
 		switch (project) { 
 			case "bokena":
-			case "wof":
-				break;
 			case "bagus":
+			case "tasqManager":
+			case "handicapy":
+				break;
+			case "ballemssoyr":
 				const p = document.createElement("p");
-				p.textContent = "Projet en cours...";
+				p.textContent = "Projet in progress...";
 				a.appendChild(p);
 
 				const h2 = document.createElement("h2");
-				h2.innerHTML = "- BAGUS ASCENT -<br>TURN-BASED RPG";
+				h2.innerHTML = "- BALLEMSSOYR -<br>A GAME ABOUT <br>SWINGS";
 				a.appendChild(h2);
 				break;
 
-			case "saveGod":
-				const p2 = document.createElement("p");
-				p2.textContent = "Projet en cours...";
-				a.appendChild(p2);
-
-				const h22 = document.createElement("h2");
-				h22.innerHTML = "- SAVE GOD -<br>ROGUELITE PUZZLE";
-				a.appendChild(h22);
-				break;
-
 			default:
-				console.error("Projet inconnu:", project);
+				console.error("Unknown project:", project);
 				break;
 		}
 
