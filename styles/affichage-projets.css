@@ -37,11 +37,11 @@
 }
 
 #bokena {
-	background-image: url("/ressources/img/common/bokenaIcon.png");
+	background-image: url("../ressources/img/common/bokenaIcon.png");
 }
 
 #bagus {
-	background-image: url("/ressources/img/common/bagusIcon.png");
+	background-image: url("../ressources/img/common/bagusIcon.png");
 }
 
 #tasqManager {
@@ -49,11 +49,11 @@
 }
 
 #handicapy {
-	background-image: url("/ressources/img/common/handicapyIcon.png");
+	background-image: url("../ressources/img/common/handicapyIcon.png");
 }
 
 #ballemssoyr {
-	background-image: url("/ressources/img/common/wipProjectIcon.png");
+	background-image: url("../ressources/img/common/wipProjectIcon.png");
 }
 
 #ballemssoyr h2 { /*texte dans les bulles*/

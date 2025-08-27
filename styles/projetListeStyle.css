@@ -54,23 +54,23 @@
 }
 
 #bokena {
-	background-image: url("/ressources/img/common/bokenaIcon.png");
+	background-image: url("../ressources/img/common/bokenaIcon.png");
 }
 
 #bagus {
-	background-image: url("/ressources/img/common/bagusIcon.png");
+	background-image: url("../ressources/img/common/bagusIcon.png");
 }
 
 #tasqManager {
-	background-image: url("/ressources/img/common/tasqManagerIcon.png");
+	background-image: url("../ressources/img/common/tasqManagerIcon.png");
 }
 
 #handicapy {
-	background-image: url("/ressources/img/common/handicapyIcon.png");
+	background-image: url("../ressources/img/common/handicapyIcon.png");
 }
 
 #ballemssoyr {
-	background-image: url("/ressources/img/common/wipProjectIcon.png");
+	background-image: url("../ressources/img/common/wipProjectIcon.png");
 }
 
 #ballemssoyr h2 { /*texte dans les bulles*/
@@ -84,7 +84,7 @@
 }
 
 #more {
-	background-image: url("/ressources/img/liste-projets/catgoat-liste-projets.png");
+	background-image: url("../ressources/img/liste-projets/catgoat-liste-projets.png");
 }
 
 #more p {
@@ -123,7 +123,7 @@
 }
 
 footer{
-	background-image: url("/ressources/img/footer/footer.png");
+	background-image: url("../ressources/img/footer/footer.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

@@ -54,7 +54,7 @@ div > p {
 
 #but {
 	z-index: 10;
-	background-image: url("/ressources/img/formation/form-planet-but.png");
+	background-image: url("../ressources/img/formation/form-planet-but.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -72,7 +72,7 @@ div > p {
 
 #bac {
 	z-index: 10;
-	background-image: url("/ressources/img/formation/form-planet-bac.png");
+	background-image: url("../ressources/img/formation/form-planet-bac.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -90,7 +90,7 @@ div > p {
 
 #base {
 	z-index: 10;
-    background-image: url("/ressources/img/formation/form-planet-base.png");
+    background-image: url("../ressources/img/formation/form-planet-base.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 

@@ -8,7 +8,7 @@ h2 {
 }
 
 #presentation{
-	background-image: url('/ressources/img/main-page/main-page-bg1.png');
+	background-image: url('../ressources/img/main-page/main-page-bg1.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 1200px;
@@ -71,7 +71,7 @@ h2 {
 }
 
 #competences {
-	background-image: url('/ressources/img/main-page/main-page-bg3.png');
+	background-image: url('../ressources/img/main-page/main-page-bg3.png');
 	background-position-x: center;
 	background-repeat: no-repeat;
 	background-color: #5375a0;
@@ -106,7 +106,7 @@ h2 {
 }
 
 footer{
-	background-image: url("/ressources/img/footer/main-page-footer.png");
+	background-image: url("../ressources/img/footer/main-page-footer.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

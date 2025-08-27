@@ -111,7 +111,7 @@ h3 > a {
 }
 
 footer{
-	background-image: url("/ressources/img/footer/footer.png");
+	background-image: url("../ressources/img/footer/footer.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
