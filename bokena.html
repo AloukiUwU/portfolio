@@ -5,205 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bokena</title>
-    <link rel="stylesheet" href="styles/projet-bokena.css"> <!-- Lien vers le fichier CSS -->
-    <script src="js/interactions.js"></script> <!-- Lien vers le fichier JavaScript -->
+	<link rel="icon" href="ressources/img/common/Catgoat.png" type="image/png">
+
+	<link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-projets.css">
+	<link rel="stylesheet" href="styles/affichage-projets.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/spinCatHeader.js"></script>
 </head>
 
-<body>
+<body projet="bokena"> <!-- pour le javascript aléatoire -->
     <header>
-        <nav>
-            <ul>
-                <li><img id="catgoatIcon" src="ressources/img/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()"></li>
-                <li><a href="index.html">DENIS, PROGRAMMEUR DE JEUX VIDÉO</a></li>
-                <li><a href="projets.html">PROJETS</a></li>
-                <li><a href="skills.html">COMPÉTENCES</a></li>
-                <li><a href="nosta.html">NOSTa</a></li>
-                <li><a href="formation.html">PARCOURS</a></li>
-                <li><a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a></li>
-                <!-- Ajoute d'autres liens de navigation selon tes besoins -->
-            </ul>
-        </nav>
+        <img id="catgoatIcon" src="ressources/img/common/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()">
+        <a href="index.html">DENIS, GAME DEVELOPPER</a>
+        <a href="projets.html">PROJECTS</a>
+        <a href="formation.html">JOURNEY</a>
+        <a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a>
     </header>
 
-    <!-- Main Page Image -->
     <main>
-        <img id="header" src="ressources/img/bokena-header.png">
-        <img id="cloudheader" src="ressources/img/projet-header.png">
-        <h2 id="h2-contexte">CONTEXTE</h2>
-        <img id="star" src="ressources/img/projet-star.png">
-        <div id="contexte">
+        <img id="img-header" src="ressources/img/projets/bokena/bokena-header.png">
+
+        <h2>CONTEXT</h2>
+        
+        <div class="container">
+			<img id="star" src="ressources/img/projets/projet-star.png">
             <p>
-                Afin de tester mon savoir des jeux 2D sur un vrai projet, j’ai créé
-                entièrement un jeu de plateforme sur Unity. Je devais au moins
-                réaliser une animation de repos (idle), une en courant et une en
-                sautant. Le gameplay de jeu plateformes devait s’accompagner
-                d’obstacles immobiles, d’autres à pousser pour avancer, d’objets
-                dangereux tombant aléatoirement du ciel, d’objets à ramasser
-                (pièces et power-ups), d’une interface utilisateur pour quitter et
-                relancer le jeu en cas de victoire ou de défaite, d’une autre pour
-                afficher les pièces, la vie et les différents objets ramassés, et
-                d’ennemis nous pourchassant. L’équilibrage a été géré à travers
-                une interface dans le menu pause pour modifier différents
-                paramètres.
+                In order to test my knowledge of 2D games on a real project, I fully 
+                created a platformer game in Unity. I had to implement at least an idle 
+                animation, a running animation, and a jumping animation. The platformer 
+                gameplay had to include static obstacles, others that could be pushed 
+                to progress, dangerous objects randomly falling from the sky, collectible 
+                items (coins and power-ups), a user interface to quit and restart the game 
+                in case of victory or defeat, another UI to display coins, health, and 
+                collected items, as well as enemies chasing the player. Balancing was 
+                handled through an interface in the pause menu that allowed modifying 
+                different parameters.
             </p>
         </div>
 
-        <h2 id="h2-etapes">ÉTAPES</h2>
-        <img id="rocket" src="ressources/img/projet-rocket.png">
-        <div id="etapes">
-            <ol>
-                <li>
-                    Réflexions sur le style du jeu, son gameplay en
-                    profondeur, et ses environnements
-                </li>
-                <li>
-                    Recherche et réalisation des ressources graphiques
-                </li>
-                <li>
-                    Développement des managers et controllers du jeu
-                </li>
-                <li>
-                    Implémentation du premier niveau
-                </li>
-                <li>
-                    Implémentation du menu principal et du menu pause
-                </li>
-                <li>
-                    Implémentation du second niveau et ses différentes
-                    mécaniques
-                </li>
-                <li>
-                    Composition des musiques du jeu (menu, niveau 1 et
-                    niveau 2)
-                </li>
-                <li>
-                    Implémentation du menu pour modifier les paramètres
-                    d’équilibrage
-                </li>
-            </ol>
-        </div>
+        <h2>GAMEPLAY</h2>
 
-        <h2 id="h2-principe">PRINCIPE DU JEU</h2>
-        <ul id="pictures">
-            <li>
-                <img id="" src="ressources/img/bokena1.png">
-                <h3>Grosse Pièce gardée par un capybara</h3>
-            </li>
-            <li>
-                <img id="" src="ressources/img/bokena2.png">
-                <h3>Obtention d'un power-up</h3>
-            </li>
-            <li>
-                <img id="" src="ressources/img/bokena3.png">
-                <h3>Différents ennemis du jeu</h3>
-            </li>
-        </ul>
-        <div id="principe">
+        <div class="container" id="pictures">
+			<div>
+				<img src="ressources/img/projets/bokena/bokena1.png">
+				<h3>Big coin kept by a sleeping capybara</h3>
+			</div>
+			<div>
+				<img src="ressources/img/projets/bokena/bokena2.png">
+				<h3>Power-up obtained</h3>
+			</div>
+			<div>
+				<img src="ressources/img/projets/bokena/bokena3.png">
+				<h3>Different ennemies in the game</h3>
+			</div>
+		</div>
+
+		<p>
+			<b>Bokena</b> (a name inspired by “bōken” meaning “adventure” in Japanese) is a colorful pixel-style 
+            game where the goal of each of its two levels is to reach the colored gem while collecting as 
+            many coins as possible. Dash (forward leap) and double-jump power-ups have been implemented, 
+            along with rare collectibles (Big Coins) to be found in each level. Two types of enemies can
+            be found:<br><br>
+
+			- <b>Slimes</b>, which can jump to chase you but can be defeated with a single stomp on their 
+            heads.<br>
+			- <b>Cave monsters</b>, slower than slimes and unable to jump, but tougher and stronger.<br><br>
+
+			In <b>Level 1</b>, you start in sunny plains where power-ups and coins are easy to reach. Then, enter 
+            the cave whose entrance looks like a jaw to find the colored gem (and other surprises...).<br><br>
+
+			In <b>Level 2</b>, after continuing deeper into the cave, you’ll find yourself in its frozen depths. There 
+            are three secret passages allowing you to obtain this level’s power-ups. You’ll discover even more 
+            different paths leading to the goal in this stage. It’s in these icy depths that cave monsters appear 
+            and stalactites may fall on you. Beware !
+		</p>
+
+        <h2>BOKENA, A COLORFUL PLATFORMER<br>I LOVED DEVELOPPING</h2>
+        
+        <div class="container">
+			<img id="fin" src="ressources/img/projets/projet-fin.png">
             <p>
-                Bokena (nom inspiré de « bōken » signifiant « aventure » en japonais) est un jeu au style
-                pixel coloré où le but de chacun de ses 2 niveaux sera d’atteindre la gemme colorée en
-                collectant le maximum de pièces. Des power-ups de Dash (bond en avant) et de double-
-                saut ont été implémentés, en plus de collectibles rares (Grosse Pièce) à trouver à chaque
-                niveau. Deux types d’ennemis sont présents :<br><br>
+                Bokena felt like my very first real video game. Years earlier, I used to make small games on Scratch, 
+                but I knew it was nothing compared to what could be done with more powerful engines. Thanks to Bokena, 
+                I discovered what I was capable of in just two months of development. Working on the SFX, music, user 
+                interface, level design, game design, and my programming skills in Unity was an absolute joy for me. 
+                I only ran into minor difficulties. For example, I couldn’t quite create a knockback effect that I was 
+                satisfied with when the character took damage. I ended up finding a compromise using Unity’s physics 
+                system to overcome this problem.<br><br>
 
-                - les slimes qui peuvent sauter pour vous poursuivre, mais vaincus en un saut sur leurs
-                têtes<br>
-                - les monstres de cavernes, plus lents que les slimes et dénués de saut, mais plus
-                résistants et plus puissants.<br><br>
+                After this project, I realized there were several areas where I could improve my code. Of course, it’s 
+                by coding that you gradually learn more and more about good practices, and that’s exactly what this 
+                project allowed me to do. I also became increasingly familiar with Unity along the way.<br><br>
 
-                Dans le niveau 1, vous commencez dans des plaines ensoleillées où les power-ups et les
-                pièces sont faciles à atteindre. Pénétrez ensuite dans la caverne dont l’entrée ressemble
-                à une mâchoire pour y trouver la gemme colorée (et d’autres surprises...).<br><br>
-
-                Dans le niveau 2, après avoir continué dans la grotte du niveau, vous vous retrouvez
-                dans ses profondeurs glacées. Il existe 3 passages secrets vous permettant d’obtenir les
-                power-ups de ce niveau. Vous trouverez encore plus de chemins différents pour atteindre
-                l’arrivée dans ce niveau. C’est dans ces profondeurs glaciales que les monstres des
-                cavernes apparaissent et que des stalactites peuvent vous tomber dessus. Prenez garde !
-            </p>
-        </div>
-
-        <h2 id="h2-conclusion">BOKENA, UN PLATFORMER COLORÉ<br>QUE J'AI ADORÉ DÉVELOPPER</h2>
-        <img id="fin" src="ressources/img/projet-fin.png">
-        <div id="conclusion">
-            <p>
-                Bokena a été comme mon premier vrai jeu vidéo à moi. Des années
-                auparavant, je faisais de petits jeux sur Scratch, mais je savais que
-                ce n’était pas grand-chose par rapport à ce que l’on peut faire avec
-                des moteurs plus performants. Grâce à Bokena, j’ai su ce dont j’étais
-                capable en 2mois de développement. Travailler les sfx, les musiques,
-                l’interface utilisateur, le level design, le game design et mes
-                compétences en programmation sur Unity a été un réel bonheur pour
-                moi. Je n’ai rencontré que des difficultés minimes. Par exemple, je
-                n’ai pas réussi à créer un recul qui me convenait lorsque le
-                personnage se prenait des dégâts. J’ai su trouver un compromis avec
-                les physiques de Unity pour surmonter ce problème.<br><br>
-
-                Après ce projet, je me suis rendu compte que j’avais plusieurs points
-                d’amélioration sur mon code. Bien sûr c’est en codant qu’on en
-                apprend de plus en plus sur les pratiques d’un bon code, et c’est
-                exactement ce que le projet a fait. Je me suis également familiarisé
-                de plus en plus avec Unity.<br><br>
-
-                En bref, je suis très heureux d’avoir fait ce projet, d’avoir fait Bokena.
+                In short, I’m really happy I got to make this project — to make Bokena.
             </p>
         </div>
 
         <div id="trailer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PRyd5LKL0_0?si=YeVUW0KEteWF6LDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="755" height="425" src="https://www.youtube.com/embed/kSTSGo_v7g0?si=YeVUW0KEteWF6LDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3>
-                Bande-annonce du jeu (<a style="color: #FFE100;" href="https://youtu.be/PRyd5LKL0_0?si=9sxfGv0mgv6l1mbv">ici aussi</a>)
+                Game trailer (<a href="https://youtu.be/kSTSGo_v7g0?si=4HvhAx5bnSaLw9IB">here too</a>)
             </h3>
         </div>
 
-        <h2 id="h2-explore">EXPLOREZ D'AUTRES<br>DE MES PROJETS</h2>
-        <ul id="explore">
-            <li>
-                <a href="wof.html">
-                    <img id="WOF" src="ressources/img/wofIcon.png">
-                </a>
-            </li>
-            <li>
-                <a id="bagus" href="bagus.html">
-                    <img id="WIP" src="ressources/img/wipProjectIcon.png">
-                    <p>Projet en cours...</p>
-                    <h4>- BAGUS ASCENT -<br>
-                    TURN-BASED RPG</h4>
-                </a>
-            </li>
-            <li>
-                <a id="saveGod" href="saveGod.html">
-                    <img id="WIP" src="ressources/img/wipProjectIcon.png">
-                    <p>Projet en cours...</p>
-                    <h4>- SAVE GOD -<br>
-                    ROGUELITE PUZZLE</h4>
-                </a>
-            </li>
-        </ul>
+        <h2>EXPLORE MORE OF<br>MY PROJECTS</h2>
+        <div id="projets">
+			<!-- <a href="wof.html" id="wof" class="projet">
+			</a>
+			<a href="bagus.html" id="bagus" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- BAGUS ASCENT -<br>
+				TURN-BASED RPG</h2>
+			</a>
 
-        <div id="moreProjects">
+			<a href="saveGod.html" id="saveGod" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- SAVE GOD -<br>
+				ROGUELITE PUZZLE</h2>
+			</a> -->
+        </div>
+
+        <div id="moreProjects" class="star-button">
             <a href="projets.html">
-            <img src="ressources/img/starryButton.png">
-                <p>
-                    Tous mes projets
-                </p>
+                All my projects
             </a>
         </div>
     </main>
-    <img id="footer-bg" src="ressources/img/liste-projets-footer.png">
-    <footer>
-    <nav>
-        <ul>
-            <li>&copy; 2025 Denis Trimolet</li>
-            <!-- Icône de mail + texte du mail -->
-            <li><a href="mailto:denis.trimolet@gmail.com">
-                <img id="mailIcon" src="ressources/img/mailIcon.png">denis.trimolet@gmail.com</a>
-            </li>
-            <!-- Icône de linked in> -->
-            <li><a href="https://www.linkedin.com/in/denis-trimolet" target="_blank"><img id="linkedinIcon" src="ressources/img/LinkedinIcon.png"></a></li>
-        </ul>
-    </nav>
-</footer>
+	<footer>
+		<p>&copy; 2025 Denis Trimolet</p>
+		<!-- Icône de mail + texte du mail -->
+		<a href="mailto:denis.trimolet@gmail.com" id="mail">
+			<img id="mailIcon" src="ressources/img/footer/mailIcon.png"> denis.trimolet@gmail.com
+		</a>
+		<!-- Icône de linked in> -->
+		<a href="https://www.linkedin.com/in/denis-trimolet" target="_blank">
+			<img id="linkedinIcon" src="ressources/img/footer/LinkedinIcon.png">
+		</a>
+	</footer>
+	<script src="js/showRandomProjects.js"></script>
 </body>
 
 </html>

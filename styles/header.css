@@ -1,0 +1,64 @@
+header {
+    z-index: 1000;
+    position: fixed;
+	top: 0;
+
+	padding: 10px 25px;
+	width: calc(100vw - 50px); /* -50px est la somme de 25*2 */
+	height: 60px;
+
+    font-size: calc(18px + .05vw);
+    text-align: center;
+    font-family: 'GothicBold', 'Arial', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+	column-gap: 30px;
+	flex-wrap: wrap;
+
+    background-color: #171717;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Pas de soulignement par défaut */
+}
+
+/* Styles lorsque la souris survole le lien */
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+header a:hover {
+    color: #FFE100; /* Changement de couleur au survol */
+}
+
+@media screen and (max-width: 1400px) {
+	header {
+		font-size: calc(14px + .05vw);
+	}
+
+	header img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
+}
+}
+
+@media (max-width: 600px) {
+
+	header{
+		height: 80px;
+	}
+
+	main{
+		margin-top: 80px; /* pour ne pas prendre en compte le header */
+	}
+}

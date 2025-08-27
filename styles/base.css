@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'MSReferenceSansSerif';
+    src: url('../ressources/fonts/ms-reference-sans-serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBold';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MSReferenceSansSerifBoldItalic';
+    src: url('../ressources/fonts/ms-reference-sans-serif-bold-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBold';
+    src: url('../ressources/fonts/GOTHICB.TTF') format('truetype');
+}
+
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    background-color: #6F9CD6;
+    min-height: 100vh;
+}
+
+main{
+	margin-top: 60px; /* pour prendre en compte le header */
+}
+
+h1 {
+    font-size: calc(18px + .9vw);
+	text-align: center;
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    padding: 100px 0 calc(50px + 4%) 0;
+}
+
+.star-button {
+	background-image: url("/ressources/img/common/starryButton.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}

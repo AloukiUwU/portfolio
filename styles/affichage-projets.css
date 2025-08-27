@@ -1,0 +1,98 @@
+#projets {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: 0 100px 20px 100px;
+    padding: 0;
+	gap: 35px; 
+	flex-wrap: wrap; 
+}
+
+#projets a {
+	user-select: none;
+	border: 7px solid black; /* Épaisseur et couleur de la bordure */
+	border-radius: 15px;
+	position: relative;
+	z-index: 1;
+}
+
+#projets h2 {
+    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+    text-align: center;
+    color:#303030;
+}
+
+#projets p, footer p {
+    font-family: 'MSReferenceSansSerifBoldItalic', 'Arial', sans-serif;
+	background-color: unset;
+	border: unset;
+	border-radius: unset;
+	padding: 0;
+}
+
+.projet{
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+#bokena {
+	background-image: url("/ressources/img/common/bokenaIcon.png");
+}
+
+#bagus {
+	background-image: url("/ressources/img/common/bagusIcon.png");
+}
+
+#tasqManager {
+	background-image: url("/ressources/img/common/tasqManagerIcon.png");
+}
+
+#handicapy {
+	background-image: url("/ressources/img/common/handicapyIcon.png");
+}
+
+#ballemssoyr {
+	background-image: url("/ressources/img/common/wipProjectIcon.png");
+}
+
+#ballemssoyr h2 { /*texte dans les bulles*/
+	margin: 160px 0 0 80px;
+	font-size: 16px;
+}
+
+#ballemssoyr p { /* projet en cours */
+	margin: 0;
+	font-size: 15px;
+}
+
+#moreProjects {
+    width: 300px;
+	height: 115px;
+	position: relative;
+	left: 450px;
+
+	font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#moreProjects a {
+	color:black;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+#moreProjects a:hover p {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+@media screen and (max-width: 1230px) {
+
+	#moreProjects {
+		position: inherit;
+	}
+	
+}

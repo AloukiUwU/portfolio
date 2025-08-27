@@ -5,100 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Parcours</title>
-    <link rel="stylesheet" href="styles/formationStyle.css"> <!-- Lien vers le fichier CSS -->
-    <script src="js/interactions.js"></script> <!-- Lien vers le fichier JavaScript -->
+	<link rel="icon" href="ressources/img/common/Catgoat.png" type="image/png">
+
+	<link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/formationStyle.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/spinCatHeader.js"></script> 
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><img id="catgoatIcon" src="ressources/img/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()"></li>
-                <li><a href="index.html">DENIS, PROGRAMMEUR DE JEUX VIDÉO</a></li>
-                <li><a href="projets.html">PROJETS</a></li>
-                <li><a href="skills.html">COMPÉTENCES</a></li>
-                <li><a href="nosta.html">NOSTa</a></li>
-                <li><a href="formation.html">PARCOURS</a></li>
-                <li><a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a></li>
-                <!-- Ajoute d'autres liens de navigation selon tes besoins -->
-            </ul>
-        </nav>
+        <img id="catgoatIcon" src="ressources/img/common/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()">
+        <a href="index.html">DENIS, GAME DEVELOPPER</a>
+        <a href="projets.html">PROJECTS</a>
+        <a href="formation.html">JOURNEY</a>
+        <a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a>
     </header>
 
-    <!-- Main Page Image -->
     <main>
-        <h1>
-            MON PARCOURS
-        </h1>
-        <img id="lilstar1" src="ressources/img/lilstar3.png">
-        <img id="lilstar2" src="ressources/img/lilstar3.png">
-        <img id="bigstar" src="ressources/img/form-star.png">
-        <img id="whiteHole" src="ressources/img/white-hole.png">
-        <img id="planet1" src="ressources/img/form-planet-1.png">
-        <img id="planet2" src="ressources/img/form-planet-2.png">
+        <h1>MY JOURNEY</h1>
 
-        <div id="but">
-            <div id="planet-title">
-                <h2>
-                    BUT Informatique appliqué à<br>l'imagerie numérique (2022-2024)
-                </h2>
-            </div>
-            <div id="planet-text">
-                <p>
-                    Après mon baccalauréat, il me fallait trouver des<br>
-                    études correspondant à ma future profession. J’ai<br>
-                    alors découvert l’IUT du Puy-en-Velay comme étant<br>
-                    le seul établissement en France à proposer<br>
-                    publiquement un BUT d’informatique tourné vers<br>
-                    l’imagerie numérique. On y apprend à programmer<br>
-                    sur des projets très visuels et graphiques et il y a<br>
-                    même des cours de modélisation 3D ! Ni une ni deux,<br>
-                    je déménage au Puy-en-Velay après<br>
-                    avoir été rapidement accepté pour cette formation.<br>
-                </p>
-            </div>
-        </div>
-        <div id="bac">
-            <div id="planet-title">
-                <h2>
-                    Baccalauréat STI2D Option<br>(Obtenu en 2022)
-                </h2>
-            </div>
-            <div id="planet-text">
-                <p>
-                    Lors de mon année de 3e, au collège, je savais ce<br>
-                    que je voulais faire : Développer de jeu vidéo. Je<br>
-                    voyais déjà le code comme le squelette du jeu.<br>
-                    C’est lui qui donne vie et qui rassemble tous les<br>
-                    autres éléments dont a besoin le jeu. Voilà<br>
-                    pourquoi j’ai choisi un cursus qui se rapprocherait,<br>
-                    ou qui me permettrait de m’approcher de plus en<br>
-                    plus de cette voie. J’ai décroché mon baccalauréat<br>
-                    en 2022 avec mention bien en continuant de<br>
-                    m’accrocher à mes ambitions.
-                </p>
-            </div>
-        </div>
-        <h2 id="jv">
-            "Je veux être<br>
-            programmeur de<br>
-            jeux vidéo"<br>
-            (2019)
-        </h2>
+        <img id="lilstar1" src="ressources/img/common/lilstar3.png">
+        <img id="lilstar2" src="ressources/img/common/lilstar3.png"> 
+
+
+        <div id="formations">
+
+			<img id="bg-start" src="ressources/img/formation/form-bg-start.png">
+
+			<div id="but">
+				<div class="planet-text">
+					<h2>Computer Science Bachelor focused on digital imaging (2022-2025)</h2>
+					<p>
+						After my baccalaureate, I needed to find
+						studies that matched my future profession. I
+						then discovered the technological universitary institute of Puy-en-Velay as being
+						the only establishment in France to offer
+						publicly a computer science bachelor focused on
+						digital imaging. You can learn to program
+						on highly visual and graphic projects, and there are even
+						3D modeling classes ! So, without further ado,
+						I was off to Puy-en-Velay after
+						being quickly accepted for this course.
+					</p>
+				</div>
+			</div>
+			<img src="ressources/img/formation/form-bg-loop2.png" id="transition1">
+			<div id="bac">
+				<div class="planet-text">
+					<h2>
+						IT Baccalaureate with Numeric Innovation & Sciences option (obtained in 2022)
+					</h2>
+					<p>
+						In my last year at middle school, I knew what
+						I wanted to do: develop video games. I was
+						already seeing code as the skeleton of the game.
+						It's what gives life, motion and brings together all the
+						other elements a game needs. That's why I chose a course 
+						of study that would get me closer and closer to this path. I passed my baccalaureate
+						in 2022 with honors, continuing to
+						pursue my ambitions.
+					</p>
+				</div>
+			</div>
+			<img src="ressources/img/formation/form-bg-loop1.png" id="transition2">	
+			<div id="base">
+				<h2>
+					"I want to become <br>a game developper"<br>
+					(2019)
+				</h2>
+			</div>
+		</div>
     </main>
-    <footer>
-    <nav>
-        <ul>
-            <li>&copy; 2025 Denis Trimolet</li>
-            <!-- Icône de mail + texte du mail -->
-            <li><a href="mailto:denis.trimolet@gmail.com">
-                <img id="mailIcon" src="ressources/img/mailIcon.png">denis.trimolet@gmail.com</a>
-            </li>
-            <!-- Icône de linked in> -->
-            <li><a href="https://www.linkedin.com/in/denis-trimolet" target="_blank"><img id="linkedinIcon" src="ressources/img/LinkedinIcon.png"></a></li>
-        </ul>
-    </nav>
-</footer>
+	<footer>
+		<p>&copy; 2025 Denis Trimolet</p>
+		<!-- Icône de mail + texte du mail -->
+		<a href="mailto:denis.trimolet@gmail.com" id="mail">
+			<img id="mailIcon" src="ressources/img/footer/mailIcon.png"> denis.trimolet@gmail.com
+		</a>
+		<!-- Icône de linked in> -->
+		<a href="https://www.linkedin.com/in/denis-trimolet" target="_blank">
+			<img id="linkedinIcon" src="ressources/img/footer/LinkedinIcon.png">
+		</a>
+	</footer>
 </body>
 
 </html>

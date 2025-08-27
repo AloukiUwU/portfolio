@@ -5,96 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bagus Ascent</title>
-    <link rel="stylesheet" href="styles/projet-bagus.css"> <!-- Lien vers le fichier CSS -->
-    <script src="js/interactions.js"></script> <!-- Lien vers le fichier JavaScript -->
+	<link rel="icon" href="ressources/img/common/Catgoat.png" type="image/png">
+
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/base-projets.css"> 
+	<link rel="stylesheet" href="styles/affichage-projets.css">
+    <!-- <link rel="stylesheet" href="styles/projet-bagus.css"> fichier css pour légers correctifs -->
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/spinCatHeader.js"></script>
 </head>
 
-<body>
+<body projet="bagus"> <!-- pour le javascript aléatoire -->
     <header>
-        <nav>
-            <ul>
-                <li><img id="catgoatIcon" src="ressources/img/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()"></li>
-                <li><a href="index.html">DENIS, PROGRAMMEUR DE JEUX VIDÉO</a></li>
-                <li><a href="projets.html">PROJETS</a></li>
-                <li><a href="skills.html">COMPÉTENCES</a></li>
-                <li><a href="nosta.html">NOSTa</a></li>
-                <li><a href="formation.html">PARCOURS</a></li>
-                <li><a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a></li>
-                <!-- Ajoute d'autres liens de navigation selon tes besoins -->
-            </ul>
-        </nav>
+        <img id="catgoatIcon" src="ressources/img/common/Catgoat.png" alt="catgoatIcon" onmouseenter="spinCatgoat()">
+        <a href="index.html">DENIS, GAME DEVELOPPER</a>
+        <a href="projets.html">PROJECTS</a>
+        <a href="formation.html">JOURNEY</a>
+        <a href="ressources/CV Unity Developper Denis Trimolet 01.01.2025.pdf" target="_blank">CV</a>
     </header>
 
-    <!-- Main Page Image -->
     <main>
-        <img id="header" src="ressources/img/wip-header.png">
-        <h1>BAGUS ASCENT</h1>
-        <img id="cloudheader" src="ressources/img/projet-header.png">
-        <h2 id="h2-contexte">CONTEXTE<br>(projet en cours)</h2>
-        <img id="star" src="ressources/img/projet-star.png">
-        <div id="contexte">
-            <p>
-                La consigne est simple : Réaliser un jeu vidéo en 3 semaines par groupe de 4 à 5 pour le présenter à la
-                fin. Le jeu devra être quasi-entièrement terminé à la fin du temps donné, et pourra être peaufiner après
-                la présentation (débogage et autres...). N’importe quelle technologie et moteur peut être utilisé.
-                Aucune contrainte sur le(s)
-                genre(s) du jeu, ses visuels ou ce qu’il doit contenir.<br><br>
+        <img id="img-header" src="ressources/img/projets/bagus/bagus-header.png">
 
-                Pour mon groupe, le projet réalisé de cette consigne est Bagus Ascent, un RPG tour-par-tour développé
-                avec Unity (car moteur avec lequel nous avions le plus d'aise). Le joueur
-                contrôle une équipe de 4 héros. Les héros gagnent de l’expérience en combattant les monstres, et peuvent
-                débloquer plusieurs attaques uniques au cours de l’aventure. Leur but est de vaincre le vil Kaos qui
-                menace le monde de Bagus. Le vaincre ne sera pas aisé, puisqu’il prendra possession de l’un des 4 héros
-                de l’équipe au hasard. Il utilisera contre vous ses statistiques et les attaques que vous lui avez
-                choisi.
+        <h2>CONTEXT</h2>
+        
+        <div class="container">
+			<img id="star" src="ressources/img/projets/projet-star.png">
+            <p>
+                [CONTEXT WIP]
             </p>
         </div>
 
-        <h2 id="h2-explore">EXPLOREZ D'AUTRES<br>DE MES PROJETS</h2>
-        <ul id="explore">
-            <li>
-                <a id="saveGod" href="saveGod.html">
-                    <img id="WIP" src="ressources/img/wipProjectIcon.png">
-                    <p>Projet en cours...</p>
-                    <h4>- SAVE GOD -<br>
-                        ROGUELITE PUZZLE</h4>
-                </a>
-            </li>
-            <li>
-                <a href="bokena.html">
-                    <img id="BOKENA" src="ressources/img/bokenaIcon.png">
-                </a>
-            </li>
-            <li>
-                <a href="wof.html">
-                    <img id="WOF" src="ressources/img/wofIcon.png">
-                </a>
-            </li>
-        </ul>
+        <h2>GAMEPLAY</h2>
 
-        <div id="moreProjects">
+        <div class="container" id="pictures">
+			<div>
+				<img src="ressources/img/projets/bokena/bokena1.png">
+				<h3>[IMG 1]</h3>
+			</div>
+			<div>
+				<img src="ressources/img/projets/bokena/bokena2.png">
+				<h3>[IMG 2]</h3>
+			</div>
+			<div>
+				<img src="ressources/img/projets/bokena/bokena3.png">
+				<h3>[IMG 3]</h3>
+			</div>
+		</div>
+
+		<p>
+			[GAMEPLAY WIP]
+		</p>
+
+        <h2>[WIP BAGUS<br>CONCLUSION]</h2>
+        
+        <div class="container">
+			<img id="fin" src="ressources/img/projets/projet-fin.png">
+            <p>
+                [CONCLUSION WIP]
+            </p>
+        </div>
+
+        <div id="trailer">
+            <iframe width="755" height="425" src="https://www.youtube.com/embed/OUr0_7NNZeQ?si=UmHVOmV8_gBPV9B_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>
+                Game trailer (<a href="https://youtu.be/OUr0_7NNZeQ">here too</a>)
+            </h3>
+        </div>
+
+        <h2>EXPLORE MORE OF<br>MY PROJECTS</h2>
+        <div id="projets">
+			<!-- <a href="wof.html" id="wof" class="projet">
+			</a>
+			<a href="bagus.html" id="bagus" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- BAGUS ASCENT -<br>
+				TURN-BASED RPG</h2>
+			</a>
+
+			<a href="saveGod.html" id="saveGod" class="projet">
+				<p>Projet en cours...</p>
+				<h2>- SAVE GOD -<br>
+				ROGUELITE PUZZLE</h2>
+			</a> -->
+        </div>
+
+        <div id="moreProjects" class="star-button">
             <a href="projets.html">
-                <img src="ressources/img/starryButton.png">
-                <p>
-                    Tous mes projets
-                </p>
+                All my projects
             </a>
         </div>
     </main>
-    <img id="footer-bg" src="ressources/img/liste-projets-footer.png">
     <footer>
-    <nav>
-        <ul>
-            <li>&copy; 2025 Denis Trimolet</li>
-            <!-- Icône de mail + texte du mail -->
-            <li><a href="mailto:denis.trimolet@gmail.com">
-                <img id="mailIcon" src="ressources/img/mailIcon.png">denis.trimolet@gmail.com</a>
-            </li>
-            <!-- Icône de linked in> -->
-            <li><a href="https://www.linkedin.com/in/denis-trimolet" target="_blank"><img id="linkedinIcon" src="ressources/img/LinkedinIcon.png"></a></li>
-        </ul>
-    </nav>
-</footer>
+		<p>&copy; 2025 Denis Trimolet</p>
+		<!-- Icône de mail + texte du mail -->
+		<a href="mailto:denis.trimolet@gmail.com" id="mail">
+			<img id="mailIcon" src="ressources/img/footer/mailIcon.png"> denis.trimolet@gmail.com
+		</a>
+		<!-- Icône de linked in> -->
+		<a href="https://www.linkedin.com/in/denis-trimolet" target="_blank">
+			<img id="linkedinIcon" src="ressources/img/footer/LinkedinIcon.png">
+		</a>
+	</footer>
+	<script src="js/showRandomProjects.js"></script>
 </body>
 
 </html>

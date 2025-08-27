@@ -1,115 +1,37 @@
-@font-face {
-    font-family: 'MSReferenceSansSerif';
-    src: url('../ressources/fonts/ms-reference-sans-serif.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MSReferenceSansSerifBold';
-    src: url('../ressources/fonts/ms-reference-sans-serif-bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MSReferenceSansSerifItalic';
-    src: url('../ressources/fonts/ms-reference-sans-serif-italic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MSReferenceSansSerifBoldItalic';
-    src: url('../ressources/fonts/ms-reference-sans-serif-bold-italic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicBold';
-    src: url('../ressources/fonts/GOTHICB.TTF') format('truetype'); /* Spécifie le chemin du fichier et le format de la police */
-    /* Tu peux ajouter d'autres propriétés ici, comme font-weight, font-style, etc. */
-}
-
-header {
-    z-index: 1000;
-    position: fixed;
-    width: 100%;
-    font-size: 1vw;
-    padding: 1vw;
-    text-align: center;
-    font-family: 'GothicBold', 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
-    height: 1.5vw;
-    background-color: #171717;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
-    align-items: center;
-}
-
-header nav li {
-    padding-left: 9%;
-    margin-right: 8%;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    color: inherit; /* Hérite de la couleur du texte du header */
-    text-decoration: none; /* Supprime le soulignement par défaut des liens */
-}
-
-header img {
-    max-height: 100%;
-    width: 3vw;
-    height: 3vw;
-    transition: transform 0.5s; /* Ajoute une transition pour une animation plus fluide */
-}
-
-a {
-    color: white;
-    text-decoration: none; /* Pas de soulignement par défaut */
-}
-
-/* Styles lorsque la souris survole le lien */
-a:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
-header a:hover {
-    color: #FFE100; /* Changement de couleur au survol */
-}
-
-/* Main Content */
-
 body {
-    color: white;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    background: url("../ressources/img/starry-bg.png");
+    background: url("../ressources/img/common/starry-bg.png");
     background-size: 100% auto; /* Couvre la largeur, se répète en hauteur */
-    background-repeat: repeat-y; /* Se répète verticalement */
-    height: 240vw;
 }
 
-main {
-    width: 100%;
-    position: absolute;
-    height:230vw;
-    top:5vw;
+h2{
+	color: #000000;
+    font-size: calc(11px + .3vw);
+	font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+	text-align: center;
+
+	padding: 30px 60px;
+	background-color: #ffffff;
+	border-radius: 5px;
+
+	position: relative;
 }
 
-main h1 {
-    width: 100%;
-    position: absolute;
-    font-size: 2.5vw;
-    text-align: center;
-    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-    top: 5vw;
+div > p {
+	color: #000000;
+	font-size: calc(12px + .1vw);
+	text-align: center;
+	font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
+
+	padding: 10px;
+	background-color: #ffffff80;
+	border-radius: 5px;
 }
 
 #lilstar1 {
     position: absolute;
     user-select: none;
     width:7vw;
-    top:3vw;
+    top:8vw;
     left:20vw;
     transform: scaleX(-1) rotate(-20deg);
 }
@@ -118,185 +40,177 @@ main h1 {
     position: absolute;
     user-select: none;
     width: 4vw;
-    top:11vw;
+    top:12vw;
     left: 70vw;
     transform: rotate(-170deg);
 }
 
-main img {
-    max-height: 100%;
-}
-
-#bigstar {
-    width: 57.5vw;
-    position: absolute;
-    user-select: none;
-    top:15vw;
-    left: 19%;
-    z-index: 1;
-}
-
-#whiteHole {
-    width: 40vw;
-    position: absolute;
-    user-select: none;
-    top:150vw;
-    right: 0;
-}
-
-#planet1 {
-    width: 37vw;
-    position: absolute;
-    user-select: none;
-    top:92vw;
-    left: 0;
-}
-
-#planet2 {
-    width: 55vw;
-    position: absolute;
-    user-select: none;
-    top:22vw;
-    right: 0;
-}
-
-#planet-title {
-    position: relative;
-    width: 100%;
-    height:5.5vw;
-    padding: 0;
-    margin: 0;
-    background-color: #ffffff;
-    border: 0.5vw #ffffff; /* Épaisseur et couleur de la bordure */
-    border-radius: 0.25vw;
-    color: #000000;
-    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-}
-
-#planet-text {
-    position: relative;
-    top: 1vw;
-    width: 100%;
-    height:14vw;
-    padding: 0;
-    margin: 0;
-    background-color: #ffffff80;
-    border: 0.5vw #ffffff80; /* Épaisseur et couleur de la bordure */
-    border-radius: 0.25vw;
-    color: #000000;
-    font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
+#formations{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #but {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    height: 40vw;
-    width: 27vw;
-    top: 50vw;
-    right: 2.5vw;
-    text-align: right;
-}
+	z-index: 10;
+	background-image: url("/ressources/img/formation/form-planet-but.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 
-#but h2{
-    position: absolute;
-    font-size: 1.1vw;
-    top:0.5vw;
-    right: 2.5vw;
-    width:22w;
-}
+	width: 700px;
+	height: 700px;
 
-#but p {
-    position: absolute;
-    font-size: 0.9vw;
-    top:0.5vw;
-    right: 1vw;
-    width:100%;
+	position: relative;
+	top: -100px; 
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #bac {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    height: 40vw;
-    width: 27vw;
-    top: 111.5vw;
-    left: 2.5vw;
-    text-align: left;
+	z-index: 10;
+	background-image: url("/ressources/img/formation/form-planet-bac.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	width: 550px;
+	height: 550px;
+
+	position: relative;
+	top: -220px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-#bac h2{
-    position: absolute;
-    font-size: 1.1vw;
-    top:0.5vw;
-    left: 2.5vw;
-    width:22vw;
+#base {
+	z-index: 10;
+    background-image: url("/ressources/img/formation/form-planet-base.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	width: 300px;
+	height: 300px;
+
+	position: relative;
+	top: -340px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-#bac p {
-    position: absolute;
-    font-size: 0.9vw;
-    top:0.5vw;
-    left: 1vw;
-    width:100%;
+.planet-text{
+	max-width: 350px;
 }
 
-#jv {
-    color: #000000;
-    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-    position: absolute;
-    font-size: 1.1vw;
-    top:178.25vw;
-    right: 3vw;
-    text-align: center;
+#base h2 {
+	font-size: calc(11px + .3vw);
+	text-align: center;
+	font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
+	padding: 0;
+	background-color: unset;
+	border-radius: 5px;
 }
 
-/* -------- */
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    background-color: rgba(0, 0, 0, 0);
-
-    font-size: 1.25vw;
-    text-align: center;
-    font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ajustement ici pour espacer les éléments sur toute la longueur */
+#transition1{
+	position: relative;
+	top: -180px;
 }
 
-footer nav ul {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    display: flex; /* Utilise Flexbox pour le positionnement des éléments de la liste */
-    align-items: center;
+#transition2{
+	position: relative;
+	top: -260px;
 }
 
-footer nav li {
-    margin-right: 24.5%;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    color: inherit; /* Hérite de la couleur du texte du header */
-    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+@media screen and (max-width: 900px) {
+
+	#lilstar1 {
+		top: 12vw;
+	}
+
+	h2{
+		padding: 20px 40px;
+	}
 }
 
-footer img {
-    max-height: 100%;
+@media screen and (max-width: 750px) {
+
+	#but{
+		width: 500px;
+		height: 500px;
+	}
+
+
+	#lilstar1, #lilstar2 {
+		display: none;
+	}
+
 }
 
-#mailIcon {
-    width: 1.9vw;
-    margin-right: 5%;
+@media screen and (max-width: 600px) {
+
+	h2 {
+		padding: 15px 30px
+	}
+
+	#bg-start {
+		width: 300px;
+	}
+
+	#transition1 {
+		width: 300px;
+		top: -110px;
+	}
+
+	#transition2 {
+		width: 300px;
+		top: -180px;
+	}
+
+	#but{
+		top: -50px;
+	}
+
+	#bac {
+		width: 400px;
+		height: 400px;
+		top: -150px;
+	}
+
+	#base{
+		top: -260px;
+	}
 }
 
-#linkedinIcon {
-    width: 7.25vw;
+@media screen and (max-width: 500px) {
+
+	#but{
+		width: 400px;
+		height: 400px;
+	}
+
+	#bac {
+		width: 370px;
+		height: 370px;
+	}
 }
 
-#telIcon {
-    width: 1.5vw;
-    margin-right: 7%;
+@media screen and (max-width: 400px) {
+
+	h2 {
+		font-size: calc(11px + .3vw);
+		padding: 10px 20px;
+	}
+
+	.planet-text {
+		font-size: calc(10px + .1vw);
+		max-width: 300px;
+	}
 }
