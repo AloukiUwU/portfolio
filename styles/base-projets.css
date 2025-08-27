@@ -24,6 +24,11 @@ p {
     font-family: 'MSReferenceSansSerif', 'Arial', sans-serif;
 }
 
+p > a {
+	color: #FFE100;
+	text-decoration: none; /* Pas de soulignement par défaut */
+}
+
 h3 > a {
 	color: #FFE100;
 	text-decoration: none; /* Pas de soulignement par défaut */
@@ -87,6 +92,13 @@ h3 > a {
     border-radius: 1vw;
 }
 
+#pictures #long {
+	width: 480px;
+	height: 300px;
+    border: 5px solid black;
+    border-radius: 1vw;
+}
+
 /*#endregion image exemple */
 
 #trailer h3 {
@@ -120,5 +132,12 @@ footer{
 	.container p, #pictures ~ p {
 		width: 80vw;
 		max-width: unset;
+	}
+
+	#pictures #long {
+		width: 360px;
+		height: 225px;
+    	border: 5px solid black;
+    	border-radius: 1vw;
 	}
 }
