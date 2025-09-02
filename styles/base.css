@@ -23,6 +23,12 @@
     src: url('../ressources/fonts/GOTHICB.TTF') format('truetype');
 }
 
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #FFE100 #171717;
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
     padding: 0;
@@ -31,20 +37,34 @@ body {
     min-height: 100vh;
 }
 
-main{
-	margin-top: 60px; /* pour prendre en compte le header */
+main {
+    margin-top: 60px;
+    /* pour prendre en compte le header */
 }
 
 h1 {
     font-size: calc(18px + .9vw);
-	text-align: center;
+    text-align: center;
     font-family: 'MSReferenceSansSerifBold', 'Arial', sans-serif;
     padding: 100px 0 calc(50px + 4%) 0;
 }
 
 .star-button {
-	background-image: url("../ressources/img/common/starryButton.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+    background-image: url("../ressources/img/common/starryButton.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+/* ::-webkit-scrollbar {
+    background: #171717;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFE100;
+    z-index: 1;
+} */
